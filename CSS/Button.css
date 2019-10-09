@@ -1,0 +1,15 @@
+.button-more{
+    width: 150px;
+    height: 40px;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.1);
+    border: 2px solid white;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-more:hover{
+    background-color: white;
+    color: black;
+}
+

@@ -1,0 +1,11 @@
+*{
+    font-family: Montserrat;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html, main {
+    height: 100%;
+    width: 100%;
+}

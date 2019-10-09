@@ -1,0 +1,32 @@
+.main-hero-image {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main-hero-text{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left : 50%;
+}
+
+.main-hero-text > *{
+    margin: 16px;
+    color: white;
+
+}
+
+.image1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../Image/hero_car_rental.jpg");
+}
+
+.image2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../Image/hero_special_rental.jpg");
+}
+
+.image3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../Image/hero_truck_rental.jpg");
+}
