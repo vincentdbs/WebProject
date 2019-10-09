@@ -6,16 +6,9 @@
     position: relative;
 }
 
-.main-hero-text{
-    position: absolute;
-    top: 20%;
-    left : 50%;
-}
-
 .main-hero-text > *{
     margin: 16px 0;
     color: white;
-    overflow: hidden;
     width: 100%;
 }
 
@@ -30,4 +23,50 @@
 
 .image3{
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../Image/hero_truck_rental.jpg");
+}
+
+@media  (min-device-width: 0px) and (max-device-width: 480px){
+    .main-hero-text{
+        position: absolute;
+        top: 25%;
+        margin: 0 32px;
+    }
+
+    .main-hero-text > *{
+        margin: 16px 0;
+    }
+
+    .main-hero-image{
+        height: 75%;
+    }
+}
+
+@media (min-device-width: 481px) and (max-device-width: 1024px){
+    .main-hero-text{
+        position: absolute;
+        top: 30%;
+        margin: 0 32px;
+    }
+
+    .main-hero-text > *{
+        margin: 16px 0;
+    }
+
+    .main-hero-image{
+        height: 60%;
+    }
+}
+
+@media (min-device-width: 1025px){
+    .main-hero-text{
+        position: absolute;
+        top: 20%;
+        left : 50%;
+    }
+
+    .image2 > .main-hero-text{
+        position: absolute;
+        top: 20%;
+        left : 10%;
+    }
 }

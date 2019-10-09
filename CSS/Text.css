@@ -6,8 +6,7 @@ p{
     font-family: Nunito;
 }
 
-@media (min-device-width: 0px) and (max-device-width: 480px)
-{
+@media  (min-device-width: 0px) and (max-device-width: 480px){
     h1{
         font-size: 24px;
     }
@@ -22,7 +21,7 @@ p{
     }
 }
 
-@media (min-device-width: 0) and (max-device-width: 830px) {
+@media (min-device-width: 481px) and (max-device-width: 1024px){
     h1{
         font-size: 28px;
     }
@@ -39,17 +38,17 @@ p{
 }
 
 
-@media (min-device-width: 1081px){
+@media (min-device-width: 1025px){
     h1{
-        font-size: 30px;
+        font-size: 36px;
     }
     h2{
-        font-size: 26px;
+        font-size: 32px;
     }
     h3{
-        font-size: 22px;
+        font-size: 28px;
     }
     p, a{
-        font-size: 20px;
+        font-size: 22px;
     }
 }
