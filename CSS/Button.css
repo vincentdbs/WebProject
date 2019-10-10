@@ -1,3 +1,8 @@
+button{
+    outline: none;
+    text-decoration: none;
+}
+
 .button-more{
     width: 150px;
     height: 40px;
@@ -8,9 +13,37 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
+
 .button-more:hover{
     background-color: white;
     color: black;
     cursor: pointer;
 }
 
+.input-login{
+    border: none;
+    border-bottom: #C8C8C8 solid 2px;
+    outline: none;
+    font-family: Nunito;
+    transition: border-bottom-color 0.4s;
+}
+
+.input-login:focus{
+    border-bottom: #F8FF00 solid 2px;
+}
+
+.button-login{
+    border: #F8FF00 solid 2px;
+    width: 40%;
+    height: 20%;
+    background-color: inherit;
+    margin-top: 16px;
+    padding: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-login:hover{
+    background-color: #F8FF00;
+    color: white;
+    cursor: pointer;
+}

@@ -2,7 +2,7 @@ h1, h2, h3{
     font-family: Montserrat;
 }
 
-p, a{
+p, a, label{
     font-family: Nunito;
 }
 
@@ -23,16 +23,16 @@ p, a{
 
 @media (min-device-width: 481px) and (max-device-width: 1024px){
     h1{
-        font-size: 28px;
+        font-size: 32px;
     }
     h2{
-        font-size: 24px;
+        font-size: 28px;
     }
     h3{
-        font-size: 20px;
+        font-size: 24px;
     }
     p, a{
-        font-size: 18px;
+        font-size: 20px;
     }
 
 }
@@ -40,15 +40,15 @@ p, a{
 
 @media (min-device-width: 1025px){
     h1{
-        font-size: 36px;
+        font-size: 40px;
     }
     h2{
-        font-size: 32px;
+        font-size: 34px;
     }
     h3{
-        font-size: 28px;
+        font-size: 30px;
     }
     p, a{
-        font-size: 22px;
+        font-size: 24px;
     }
 }
