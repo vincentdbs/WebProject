@@ -36,7 +36,6 @@ button{
     border: #F8FF00 solid 2px;
     width: 40%;
     height: 20%;
-    background-color: inherit;
     margin-top: 16px;
     padding: 4px;
     transition: background-color 0.3s, color 0.3s;

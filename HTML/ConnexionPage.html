@@ -23,19 +23,40 @@
     </div>
 
     <main>
-        <div class="left-half"></div>
-        <div class="right-half">
-            <div class="main-login">
-                <h1>Welcome back !</h1>
-                <label>User name</label>
-                <input type="text" class="input-login" name="username">
-                <label>Password</label>
-                <input type="password" class="input-login" name="password">
-                <button class="button-login">Login</button>
-                <a href="#" class="link-login">or sign in</a>
+        <div id="login">
+            <div class="left-half" id="left-half-login"></div>
+            <div class="right-half" id="righ-half-login">
+                <div class="main-login">
+                    <h1>Glad to see you !</h1>
+                    <label>Email</label>
+                    <input type="text" class="input-login" name="email">
+                    <label>Password</label>
+                    <input type="password" class="input-login" name="password">
+                    <button class="button-login">Login</button>
+                    <a onclick="switchRegister()" class="link-login">or sign in</a>
+                </div>
             </div>
+        </div>
+        <div id="register">
+            <div class="left-half" id="left-half-register">
+                <div class="main-login">
+                    <h1>Welcome !</h1>
+                    <label>First name</label>
+                    <input type="text" class="input-login" name="firstName">
+                    <label>Last name</label>
+                    <input type="text" class="input-login" name="lastName">
+                    <label>Email</label>
+                    <input type="text" class="input-login" name="email">
+                    <label>Password</label>
+                    <input type="password" class="input-login" name="password">
+                    <button class="button-login">Login</button>
+                    <a href="#" class="link-login" onclick="switchConnexion()">or sign in</a>
+                </div>
+            </div>
+            <div class="right-half" id="right-half-register"></div>
         </div>
 
     </main>
+   <script src="../JS/loginSwitch.js"></script>
 </body>
 </html>

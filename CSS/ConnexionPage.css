@@ -22,7 +22,7 @@ main{
 
 .main-login{
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 10%;
 }
 
@@ -38,7 +38,41 @@ main{
     font-size: 16px;
 }
 
+.button-login{
+    background-color: inherit;
+}
+
 @media (min-device-width: 0px) and (max-device-width: 480px) {
+    .left-half{
+        display: none;
+    }
+
+    .right-half{
+        display: block;
+        width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../Image/porsche_face.jpg");
+        background-size: cover;
+    }
+
+    .right-half input{
+        background: transparent;
+    }
+
+    .right-half > *{
+        color: white;
+    }
+
+    .button-login{
+        color: white;
+        background-color: #F8FF00;
+        caret-color: white;
+    }
+
+    input{
+        color: white;
+    }
+
+
 }
 
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
