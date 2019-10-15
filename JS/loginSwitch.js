@@ -1,3 +1,5 @@
+window.addEventListener("resize", getWindowSize);
+
 let register = document.getElementById("register");
 let login = document.getElementById("login");
 switchConnexion();
@@ -34,7 +36,7 @@ function switchRegister() {
     login.style.display = "none";
 
     if (window.innerWidth >= 480){
-        rightRegister.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(\"../Image/porsche_face.jpg\")";
+        rightRegister.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(\"../Image/van_face.jpg\")";
         rightRegister.style.backgroundSize = "cover";
         rightRegister.style.display = "block";
         leftRegister.style.display = "block";
@@ -47,13 +49,12 @@ function switchRegister() {
         rightRegister.style.display = "none";
         leftRegister.style.backgroundColor = "white";
         leftRegister.style.width = "100%";
-        leftRegister.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(\"../Image/porsche_face.jpg\")";
+        leftRegister.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(\"../Image/van_face.jpg\")";
         leftRegister.style.backgroundSize = "cover";
         console.log("register inf 480");
     }
 }
 
-window.addEventListener("resize", getWindowSize);
 
 function getWindowSize(){
     if(register.style.display === "none"){
