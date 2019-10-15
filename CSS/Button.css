@@ -1,6 +1,7 @@
 button{
     outline: none;
     text-decoration: none;
+    font-family: Nunito;
 }
 
 .button-more{
@@ -43,6 +44,6 @@ button{
 
 .button-login:hover{
     background-color: #F8FF00;
-    color: white;
+    font-weight: bold;
     cursor: pointer;
 }

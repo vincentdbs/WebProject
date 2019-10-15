@@ -3,17 +3,13 @@ main{
 }
 
 .left-half {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../Image/porsche_face.jpg");
     position: absolute;
     left: 0;
     width: 50%;
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .right-half {
-    background-color: white;
     position: absolute;
     right: 0;
     width: 50%;
@@ -24,6 +20,7 @@ main{
     position: absolute;
     top: 30%;
     left: 10%;
+    width: 70%;
 }
 
 .main-login > *{
@@ -43,22 +40,12 @@ main{
 }
 
 @media (min-device-width: 0px) and (max-device-width: 480px) {
-    .left-half{
-        display: none;
-    }
 
-    .right-half{
-        display: block;
-        width: 100%;
-        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../Image/porsche_face.jpg");
-        background-size: cover;
-    }
-
-    .right-half input{
+    .main-login input{
         background: transparent;
     }
 
-    .right-half > *{
+    .right-half > * , .left-half > *{
         color: white;
     }
 
@@ -71,8 +58,6 @@ main{
     input{
         color: white;
     }
-
-
 }
 
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
