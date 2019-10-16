@@ -1,0 +1,93 @@
+.main-hero-image {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.image{
+    background-image: url("../Image/booking_background.jpg");
+    background-size: cover;
+}
+
+.center{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.center h2{
+    color: #F8FF00;
+    margin: 0 auto;
+    padding-bottom: 16px;
+}
+
+.form-booking{
+    margin: 0 auto;
+    padding: 24px;
+    background-color: black;
+}
+
+.form-booking input, .form-booking select, .form-booking label{
+    display: block;
+}
+
+.form-booking select, .form-booking input{
+    color: black;
+    text-decoration: none;
+    border: none;
+    height: 30px;
+    width: 100%;
+}
+
+.form-booking label, .form-booking p{
+    color: white;
+    padding: 8px 0;
+  }
+
+option{
+    padding: 12px;
+}
+
+@media (min-device-width: 0px) and (max-device-width: 480px) {
+    .form-booking{
+        width: 80%;
+    }
+
+    .center{
+        top: 15%;
+    }
+
+    .form-booking select, .form-booking input{
+        height: 35px;
+    }
+}
+
+@media (min-device-width: 481px) and (max-device-width: 1024px) {
+    .form-booking{
+        width: 70%;
+    }
+
+    .center{
+        top: 20%
+    }
+
+    .form-booking select, .form-booking input{
+        height: 35px;
+    }
+}
+
+@media (min-device-width: 1025px) {
+    .form-booking{
+        width: 60%;
+    }
+
+    .center{
+        top: 25%;
+    }
+
+    .form-booking select, .form-booking input{
+        height: 40px;
+    }
+
+}

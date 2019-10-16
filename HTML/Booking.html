@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Booking</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Header.css">
+    <link rel="stylesheet" href="../CSS/All.css">
+    <link rel="stylesheet" href="../CSS/Booking.css">
+    <link rel="stylesheet" href="../CSS/Text.css">
+    <link rel="stylesheet" href="../CSS/Button.css">
+</head>
+<body>
+    <div class="header">
+        <img src="../Icon/logo_voiture.png" id="logo_car">
+        <ol class="header_main-menu" id="links">
+            <li><a href="../HTML/ConnexionPage.html">Login</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="../HTML/HomePage.html">Home</a></li>
+        </ol>
+        <a class="icon" onclick="displayMenu()"><img src="../Icon/burger_menu.png" id="burger_menu"></a>
+    </div>
+
+    <main>
+        <div class="main-hero-image image">
+<!--            TODO completer avec le file php-->
+            <div class="center">
+                <form action="" method="post" class="form-booking">
+                    <h2>Your order</h2>
+                    <label>Pickup location</label>
+                    <select>
+                        <option>Select a location</option>
+                        <option>Test1</option>
+                        <option>Test1</option>
+                        <option>Test1</option>
+                    </select>
+                    <label>Return location</label>
+                    <select>
+                        <option>Select a location</option>
+                        <option>Test1</option>
+                        <option>Test1</option>
+                        <option>Test1</option>
+                    </select>
+                    <label>Pickup date</label>
+                    <input type="date">
+                    <label>Return date</label>
+                    <input type="date">
+                    <p>You have selected "car name"</p>
+                    <button type="submit" class="button-booking">Book</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="../JS/navbar.js"></script>
+</body>
+</html>

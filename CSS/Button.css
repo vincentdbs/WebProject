@@ -14,13 +14,6 @@ button{
     transition: background-color 0.3s, color 0.3s;
 }
 
-
-.button-more:hover{
-    background-color: white;
-    color: black;
-    cursor: pointer;
-}
-
 .input-login{
     border: none;
     border-bottom: #C8C8C8 solid 2px;
@@ -39,11 +32,49 @@ button{
     height: 20%;
     margin-top: 16px;
     padding: 4px;
-    transition: background-color 0.3s, color 0.3s;
+    background-color: #F8FF00;
 }
 
-.button-login:hover{
+.button-booking{
+    border: none;
     background-color: #F8FF00;
-    font-weight: bold;
-    cursor: pointer;
+    width: 100%;
+    height: 35px;
+    margin: 0 auto;
+    padding: 4px;
+    font-size: 20px;
+}
+
+@media (min-device-width: 0px) and (max-device-width: 480px) {
+    .button-booking{
+        font-size: 16px;
+    }
+}
+
+@media (min-device-width: 481px) and (max-device-width: 1024px) {
+    .button-booking{
+        font-size: 20px;
+    }
+}
+
+@media (min-device-width: 1025px) {
+    .button-login:hover{
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .button-more:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+
+    .button-booking:hover{
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .button-booking{
+        font-size: 24px;
+    }
 }

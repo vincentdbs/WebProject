@@ -2,8 +2,12 @@ h1, h2, h3{
     font-family: Montserrat;
 }
 
-p, a, label{
+p, a, label, select, input, option{
     font-family: Nunito;
+}
+
+select{
+    border: none;
 }
 
 a:hover{
@@ -20,7 +24,7 @@ a:hover{
     h3{
         font-size: 18px;
     }
-    p, a{
+    p, a, label{
         font-size: 16px;
     }
 }
@@ -35,7 +39,7 @@ a:hover{
     h3{
         font-size: 24px;
     }
-    p, a{
+    p, a, label{
         font-size: 20px;
     }
 
@@ -52,7 +56,7 @@ a:hover{
     h3{
         font-size: 30px;
     }
-    p, a{
+    p, a, label{
         font-size: 24px;
     }
 }
