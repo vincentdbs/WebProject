@@ -44,6 +44,7 @@ a{
         display: none;
     }
 
+
     .header a {
         text-decoration: none;
         color: white;
@@ -62,7 +63,9 @@ a{
     .header_main-menu > li{
         float: none;
         text-align: center;
+        border-bottom: white solid 1px;
     }
+
 
     #burger_menu{
         display: block;
@@ -97,5 +100,7 @@ a{
         color: black;
         font-weight: bold;
     }
+
+
 
 }
