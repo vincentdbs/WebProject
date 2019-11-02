@@ -15,7 +15,7 @@
     <div class="header">
         <img src="../Icon/logo_voiture.png" id="logo_car">
         <ol class="header_main-menu" id="links">
-            <li><a href="../HTML/ConnexionPage.html">Login</a></li>
+            <li><a href="ConnexionPage.php">Login</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="../HTML/HomePage.html">Home</a></li>
         </ol>
@@ -39,19 +39,22 @@
         </div>
         <div id="register">
             <div class="left-half" id="left-half-register">
-                <div class="main-login">
-                    <h1>Welcome !</h1>
-                    <label>First name</label>
-                    <input type="text" class="input-login" name="firstName">
-                    <label>Last name</label>
-                    <input type="text" class="input-login" name="lastName">
-                    <label>Email</label>
-                    <input type="text" class="input-login" name="email">
-                    <label>Password</label>
-                    <input type="password" class="input-login" name="password">
-                    <button class="button-login">Register</button>
-                    <a class="link-login" onclick="switchConnexion()">or login</a>
-                </div>
+                <form action="../PHP/Insert_user.php" method="post">
+                    <div class="main-login">
+                        <h1>Welcome !</h1>
+                        <label>First name</label>
+                        <input type="text" class="input-login" name="firstName">
+                        <label>Last name</label>
+                        <input type="text" class="input-login" name="lastName">
+                        <label>Email</label>
+                        <input type="text" class="input-login" name="email">
+                        <label>Password</label>
+                        <input type="password" class="input-login" name="password">
+                        <input type="submit" value="Register">
+                        <button class="button-login">Register</button>
+                        <a class="link-login" onclick="switchConnexion()">or login</a>
+                    </div>
+                </form>
             </div>
             <div class="right-half" id="right-half-register"></div>
         </div>
