@@ -1,0 +1,36 @@
+.side-bar{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.side-bar i{
+    display: block;
+    margin-top: 24px;
+}
+
+.side-bar i:hover{
+    cursor: pointer;
+}
+
+.info{
+    margin-left: 20%;
+    margin-right: 3%;
+}
+
+.category{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: black solid 1px;
+}
+
+@media (min-device-width: 0px) and (max-device-width: 480px) {
+
+}
+
+@media (min-device-width: 481px) and (max-device-width: 1024px) {
+}
+
+@media (min-device-width: 1025px) {
+
+}

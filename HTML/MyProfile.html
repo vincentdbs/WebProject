@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Header.css">
+    <link rel="stylesheet" href="../CSS/All.css">
+    <link rel="stylesheet" href="../CSS/MyProfile.css">
+    <link rel="stylesheet" href="../CSS/Text.css">
+    <link rel="stylesheet" href="../CSS/Button.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img src="../Icon/logo_voiture.png" id="logo_car">
+        <ol class="header_main-menu" id="links">
+            <li><a href="../HTML/ConnexionPage.html">Login</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="../HTML/HomePage.html">Home</a></li>
+        </ol>
+        <a class="icon" onclick="displayMenu()"><img src="../Icon/burger_menu.png" id="burger_menu"></a>
+    </div>
+
+    <div class="side-bar">
+        <i class="material-icons">edit</i>
+        <i class="material-icons">lock</i>
+        <i class="material-icons">history</i>
+        <i class="material-icons">timer</i>
+    </div>
+
+    <div class="info">
+        <div class="category">
+            <form>
+                <h2>Personal information</h2>
+                <label>Last name</label>
+                <input type="text">
+                <label>First name</label>
+                <input type="text">
+                <label>Email</label>
+                <input type="email">
+            </form>
+        </div>
+
+        <div class="category">
+            <h2>Password</h2>
+            <form>
+                <label>Old password</label>
+                <input type="password">
+                <label>New password</label>
+                <input type="password">
+                <label>Confirm password</label>
+                <input type="password">
+            </form>
+        </div>
+
+        <div class="category">
+            <h2>History</h2>
+        </div>
+    </div>
+
+    <script src="../JS/navbar.js"></script>
+</body>
+</html>
