@@ -26,15 +26,17 @@
         <div id="login">
             <div class="left-half" id="left-half-login"></div>
             <div class="right-half" id="right-half-login">
-                <div class="main-login">
-                    <h1>Glad to see you !</h1>
-                    <label>Email</label>
-                    <input type="text" class="input-login" name="email">
-                    <label>Password</label>
-                    <input type="password" class="input-login" name="password">
-                    <button class="button-login">Login</button>
-                    <a onclick="switchRegister()" class="link-login">or sign in</a>
-                </div>
+                <form action="../PHP/Login.php" method="post">
+                    <div class="main-login">
+                        <h1>Glad to see you !</h1>
+                        <label>Email</label>
+                        <input type="text" class="input-login" name="email">
+                        <label>Password</label>
+                        <input type="password" class="input-login" name="password">
+                        <button class="button-login">Login</button>
+                        <a onclick="switchRegister()" class="link-login">or sign in</a>
+                    </div>
+                </form>
             </div>
         </div>
         <div id="register">
@@ -50,8 +52,7 @@
                         <input type="text" class="input-login" name="email">
                         <label>Password</label>
                         <input type="password" class="input-login" name="password">
-                        <input type="submit" value="Register">
-                        <button class="button-login">Register</button>
+                        <input type="submit" value="Register" class="button-login">
                         <a class="link-login" onclick="switchConnexion()">or login</a>
                     </div>
                 </form>
