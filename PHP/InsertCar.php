@@ -9,8 +9,6 @@
     $car_stock = $_POST['car_stock'];
     $car_type = $_POST['car_type'];
 
-    echo "<script>" . $car_price . "</script>";
-
     $sql = "INSERT INTO car(car_name, car_nb_doors, car_nb_seats, car_stocks, car_price, car_brand, car_type)
             VALUES
             ('$car_name', '$car_nb_door', '$car_nb_seats', '$car_stock', '$car_price', '$car_brand', '$car_type')";
@@ -20,4 +18,5 @@
     }
 
     mysqli_close($con);
+    include "../HTML/AddCar.php";
 ?>
