@@ -6,7 +6,7 @@
 }
 
 .image{
-    background-image: url("../Image/booking_background.jpg");
+    background-image: url("../Image/bg_add_car.jpg");
     background-size: cover;
 }
 
@@ -22,34 +22,35 @@
     padding-bottom: 16px;
 }
 
-.form-booking{
+.form-add-car{
     margin: 0 auto;
     padding: 24px;
-    background-color: #222831;
+    background-color: #292929;
 }
 
-.form-booking input, .form-booking select, .form-booking label{
+.form-add-car > input, .form-add-car select, .form-add-car label{
     display: block;
+    color:  white;
 }
 
-.form-booking select, .form-booking input{
+.form-add-car > select, .form-add-car input{
     color: black;
     text-decoration: none;
     border: none;
     width: 100%;
 }
 
-.form-booking label, .form-booking p{
+.form-add-car label .form-add-car p{
     color: white;
     padding: 8px 0;
-  }
+}
 
 option{
     padding: 12px;
 }
 
 @media (min-device-width: 0px) and (max-device-width: 480px) {
-    .form-booking{
+    .form-add-car{
         width: 80%;
     }
 
@@ -57,13 +58,13 @@ option{
         top: 15%;
     }
 
-    .form-booking select, .form-booking input{
+    .form-add-car select, .form-add-car input{
         height: 25px;
     }
 }
 
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
-    .form-booking{
+    .form-add-car{
         width: 70%;
     }
 
@@ -71,13 +72,13 @@ option{
         top: 20%
     }
 
-    .form-booking select, .form-booking input{
+    .form-add-car select, .form-add-car input{
         height: 30px;
     }
 }
 
 @media (min-device-width: 1025px) {
-    .form-booking{
+    .form-add-car{
         width: 60%;
     }
 
@@ -85,8 +86,29 @@ option{
         top: 25%;
     }
 
-    .form-booking select, .form-booking input{
+    .form-add-car select, .form-add-car input{
         height: 35px;
     }
-
 }
+
+/*.div-input-label{*/
+/*    position: relative;*/
+/*}*/
+
+/*.labelToTop{*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    transition: 0.2s;*/
+/*}*/
+
+/*input:focus + .labelToTop {*/
+/*    top: 100%;*/
+/*    margin-top: -16px;*/
+/*}*/
+
+/*input:valid {*/
+/*    background: white;*/
+/*}*/
