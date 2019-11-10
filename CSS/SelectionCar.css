@@ -41,7 +41,57 @@ option{
     margin: 8px 0;
 }
 
+/*Car*/
+.card-column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+    height: 50%;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.result {
+    margin: 0 -5px;
+}
+
+.result:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card-content {
+    box-shadow: -3px 3px 10px 1px rgba(153,153,153,1);
+    margin: 12px 6px 6px;
+    background: white url("../SVG/wave.svg") no-repeat;
+}
+
+.card-car{
+    width: 22%;
+    height: 33%;
+}
+
+.card-car-image{
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.content > p{
+    margin: 0 8px;
+}
+
+/*TODO le mettre dans le Button.css*/
+.button-car-booking{
+    width: 100%;
+    height: 30px;
+    background-color: #F8FF00;
+    border: none;
+}
+
 @media (min-device-width: 0px) and (max-device-width: 480px) {
+    /*Form*/
     .center{
         margin: 16px auto;
     }
@@ -62,6 +112,19 @@ option{
     .selection select{
         margin: 4px 0;
     }
+
+    /*Card car*/
+    .card-column {
+        float: none;
+        width: 90%;
+        display: block;
+        margin: 6px auto;
+    }
+
+    .card-car-image{
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
@@ -77,6 +140,17 @@ option{
     .form-booking select, .form-booking input{
         height: 30px;
     }
+
+    /*Card car*/
+
+    .card-column{
+        width: 50%;
+    }
+
+    .card-car-image{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media (min-device-width: 1025px) {
@@ -90,6 +164,15 @@ option{
 
     .form-booking select, .form-booking input{
         height: 35px;
+    }
+
+    .form-booking{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form-booking > select input {
+        flex: 1;
     }
 
 }

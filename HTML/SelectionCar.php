@@ -69,8 +69,45 @@
         </div>
     </div>
     <div class="result">
-        <div class="car">
-
+        <div class="card-column">
+            <div class="card-content">
+                <div class="content">
+                    <img src="../Image/photography-of-blue-wagon-audi-1035108.jpg" class="card-car-image">
+                    <p>Seats: </p>
+                    <p>Doors: </p>
+                    <p>Price: </p>
+                </div>
+            </div>
+        </div>
+        <div class="card-column">
+            <div class="card-content">
+                <div class="content">
+                    <img src="../Image/photography-of-blue-wagon-audi-1035108.jpg" class="card-car-image">
+                    <p>Seats: </p>
+                    <p>Doors: </p>
+                    <p>Price: </p>
+                </div>
+            </div>
+        </div>
+        <div class="card-column">
+            <div class="card-content">
+                <div class="content">
+                    <img src="../Image/photography-of-blue-wagon-audi-1035108.jpg" class="card-car-image">
+                    <p>Seats: </p>
+                    <p>Doors: </p>
+                    <p>Price: </p>
+                </div>
+            </div>
+        </div>
+        <div class="card-column">
+            <div class="card-content">
+                <div class="content">
+                    <img src="../Image/photography-of-blue-wagon-audi-1035108.jpg" class="card-car-image">
+                    <p>Seats: </p>
+                    <p>Doors: </p>
+                    <p>Price: </p>
+                </div>
+            </div>
         </div>
     </div>
 </main>
