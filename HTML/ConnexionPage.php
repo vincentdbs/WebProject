@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,3 +68,4 @@
    <script src="../JS/navbar.js"></script>
 </body>
 </html>
+
