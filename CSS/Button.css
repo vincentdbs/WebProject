@@ -56,6 +56,14 @@ button{
     font-size: 20px;
 }
 
+.button-search{
+    border: none;
+    background-color: #F8FF00;
+    height: 35px;
+    margin: 0 auto;
+    padding: 4px;
+}
+
 @media (min-device-width: 0px) and (max-device-width: 480px) {
     .button-booking{
         font-size: 16px;
@@ -69,9 +77,14 @@ button{
         width: 90%;
     }
 
+    .button-search{
+        width: 20%;
+    }
+
 }
 
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
+
     .button-booking{
         font-size: 20px;
     }

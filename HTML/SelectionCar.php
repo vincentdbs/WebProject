@@ -36,27 +36,31 @@
     </div>
     <div class="selection">
         <h2>Choose your car :</h2>
-        <div>
-            <select>
-                <option>Vehicule type</option>
-                <option>Car</option>
-                <option>Truck</option>
-                <option>Special</option>
+        <form action="../HTML/SelectionCar.php" method="post">
+            <select name="type">
+                <option value="">Vehicle type</option>
+                <option value="All">All</option>
+                <option value="Car">Car</option>
+                <option value="Truck">Truck</option>
+                <option value="Special">Special</option>
             </select>
-            <select>
+            <select name="nb_doors">
                 <option>Number of doors</option>
-                <option>3</option>
+                <option value="All">All</option>
+                <option >3</option>
                 <option>5</option>
                 <option>7</option>
             </select>
-            <select>
+            <select name="nb_seats">
                 <option>Number of seats</option>
+                <option>All</option>
                 <option>4</option>
                 <option>5</option>
                 <option>7</option>
                 <option>8+</option>
             </select>
-        </div>
+            <input type="submit" name="search" value="Search" class="button-search little">
+        </form>
     </div>
     <div class="result">
         <?php
