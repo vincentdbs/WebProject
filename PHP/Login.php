@@ -20,6 +20,7 @@
     }
     if($row=mysqli_fetch_array($result))
     {
+        $_SESSION['user_id'] = $row['user_id'];
         $_SESSION['user_first_name'] = $row['user_first_name'];//use session
         $_SESSION['user_last_name'] = $row['user_last_name'];//use session
         $_SESSION['user_email'] = $row['user_email'];//use session
@@ -29,8 +30,9 @@
     {
         $name = $_SESSION['user_first_name'] . " " . $_SESSION['user_last_name'];
         echo "<script>alert('Welcome back! ". $name ."');";
-        echo "window.location.href='../HTML/HomePage.php';</script>";
+        echo "window.location.href='../HTML/MyProfile.php';</script>";
         //echo 'first = ' . $_SESSION['user_first_name'] . 'last= ' . $_SESSION['user_last_name'];
+
     }
     else if($_SESSION['user_role']==="user")
     {

@@ -14,17 +14,20 @@ button{
     transition: background-color 0.3s, color 0.3s;
 }
 
-.input-login{
+.input-login, .input-account{
     border: none;
     border-bottom: #C8C8C8 solid 2px;
     outline: none;
     font-family: Nunito;
     transition: border-bottom-color 0.4s;
+    background-color: inherit;
 }
 
-.input-login:focus{
+.input-login:focus, .input-account:focus{
     border-bottom: #F8FF00 solid 2px;
 }
+
+
 
 .button-login{
     border: #F8FF00 solid 2px;
@@ -33,6 +36,14 @@ button{
     margin-top: 16px;
     padding: 4px;
     background-color: #F8FF00;
+}
+
+.button-save{
+    border: #F8FF00 solid 2px;
+    height: 30px;
+    padding: 4px;
+    background-color: #F8FF00;
+    margin-top: 16px;
 }
 
 .button-booking{
@@ -49,12 +60,30 @@ button{
     .button-booking{
         font-size: 16px;
     }
+
+    .input-account{
+        width: 90%;
+    }
+
+    .button-save{
+        width: 90%;
+    }
+
 }
 
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
     .button-booking{
         font-size: 20px;
     }
+
+    .input-account{
+        width: 40%;
+    }
+
+    .button-save{
+        width: 40%;
+    }
+
 }
 
 @media (min-device-width: 1025px) {
@@ -74,7 +103,21 @@ button{
         font-weight: bold;
     }
 
+    .button-save:hover{
+        cursor: pointer;
+        font-weight: bold;
+    }
+
     .button-booking{
         font-size: 24px;
     }
+
+    .input-account{
+        width: 20%;
+    }
+
+    .button-save{
+        width: 20%;
+    }
+
 }

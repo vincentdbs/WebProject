@@ -18,6 +18,7 @@ input{
     outline: none;
 }
 
+
 @media  (min-device-width: 0px) and (max-device-width: 480px){
     h1{
         font-size: 24px;
@@ -31,6 +32,10 @@ input{
     p, a, label{
         font-size: 16px;
     }
+    .little{
+        font-size: 12px;
+    }
+
 }
 
 @media (min-device-width: 481px) and (max-device-width: 1024px){
@@ -46,6 +51,10 @@ input{
     p, a, label{
         font-size: 20px;
     }
+    .little{
+        font-size: 16px;
+    }
+
 
 }
 
@@ -63,4 +72,8 @@ input{
     p, a, label{
         font-size: 24px;
     }
+    .little{
+        font-size: 20px;
+    }
+
 }

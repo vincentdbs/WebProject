@@ -1,3 +1,7 @@
+body{
+    background-color: #f9fae9;
+}
+
 .side-bar{
     position: absolute;
     top: 40%;
@@ -21,16 +25,30 @@
 .category{
     margin-top: 16px;
     margin-bottom: 16px;
-    border: black solid 1px;
+    background-color: white;
+    box-shadow: -3px 3px 10px 1px rgba(153,153,153,1);
+}
+
+input,  label{
+    display: block;
+    margin: 6px 0;
+
 }
 
 @media (min-device-width: 0px) and (max-device-width: 480px) {
-
+    .category{
+        padding: 20px;
+    }
 }
 
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
+    .category{
+        padding: 26px;
+    }
 }
 
 @media (min-device-width: 1025px) {
-
+    .category{
+        padding: 32px;
+    }
 }

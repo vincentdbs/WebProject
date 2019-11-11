@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
+        include "../HTML/ConnexionPage.php";
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,26 +34,29 @@
 
     <div class="info">
         <div class="category">
-            <form>
+            <form action="../PHP/EditPersonnalInfo.php" method="post">
                 <h2>Personal information</h2>
-                <label>Last name</label>
-                <input type="text">
-                <label>First name</label>
-                <input type="text">
-                <label>Email</label>
-                <input type="email">
+                <label>Last name:</label>
+                <input type="text" class="input-account" name="lastName" value="<?php echo $_SESSION['user_last_name'] ?>">
+                <label>First name:</label>
+                <input type="text" class="input-account" name="firstName" value=" <?php echo $_SESSION['user_first_name'] ?>">
+                <label>Email:</label>
+                <input type="email" class="input-account" name="email" value=" <?php echo $_SESSION['user_email'] ?>">
+                <input type="submit" value="Save" class="button-save">
             </form>
         </div>
 
         <div class="category">
             <h2>Password</h2>
+            <p class="little">You want to change your password, nothing more simple. Enter your old password then type your new one and confirm it. That's it !</p>
             <form>
-                <label>Old password</label>
-                <input type="password">
-                <label>New password</label>
-                <input type="password">
-                <label>Confirm password</label>
-                <input type="password">
+                <label>Old password:</label>
+                <input type="password" class="input-account">
+                <label>New password:</label>
+                <input type="password" class="input-account">
+                <label>Confirm password:</label>
+                <input type="password" class="input-account">
+                <input type="submit" value="Save" class="button-save">
             </form>
         </div>
 
