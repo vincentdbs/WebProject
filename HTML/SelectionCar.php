@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +18,7 @@
 
 <?php
     //Include navbar
-    include("Navbar.html");
+    include("Navbar.php");
 ?>
 
 <main>

@@ -18,9 +18,12 @@
     if(mysqli_affected_rows($con)<=0)
     {
         echo "<script>alert('Cannot update data!');";
-        die ("window.location.href='edit.php';</script>");
+        die ("window.location.href='../HTML/MyProfile.php';</script>");
     }else{
-        echo "<script>alert('Data updated!');</script>";
-        echo "<script>window.location.href='MyProfile.php=$uid';</script>";
+        $_SESSION['user_last_name'] = $last_name;
+        $_SESSION['user_first_name'] = $first_name;
+        $_SESSION['user_email'] = $email;
+        echo "<script>alert('Data updated!1' .  $first_name );</script>";
+        echo "<script>window.location.href='../HTML/MyProfile.php';</script>";
     }
 ?>

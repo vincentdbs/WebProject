@@ -1,9 +1,9 @@
 <?php
     session_start();
     if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
+        //TODO change redirection si user pas connecté
         include "../HTML/ConnexionPage.php";
     }
-
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +22,7 @@
 </head>
 <body>
     <?php
-        include "../HTML/Navbar.html";
+        include "../HTML/Navbar.php";
     ?>
 
     <div class="side-bar">
@@ -39,9 +39,9 @@
                 <label>Last name:</label>
                 <input type="text" class="input-account" name="lastName" value="<?php echo $_SESSION['user_last_name'] ?>">
                 <label>First name:</label>
-                <input type="text" class="input-account" name="firstName" value=" <?php echo $_SESSION['user_first_name'] ?>">
+                <input type="text" class="input-account" name="firstName" value="<?php echo $_SESSION['user_first_name'] ?>">
                 <label>Email:</label>
-                <input type="email" class="input-account" name="email" value=" <?php echo $_SESSION['user_email'] ?>">
+                <input type="email" class="input-account" name="email" value="<?php echo $_SESSION['user_email'] ?>">
                 <input type="submit" value="Save" class="button-save">
             </form>
         </div>
