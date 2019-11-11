@@ -6,6 +6,7 @@
                 echo "<li><a href=\"ConnexionPage.php\">Login</a></li>";
             }
             else{
+                echo "<li><a href=\"../PHP/Logout.php\">Logout</a></li>";
                 echo "<li><a href=\"MyProfile.php\">Profile</a></li>";
             }
         ?>
