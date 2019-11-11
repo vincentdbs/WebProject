@@ -37,8 +37,8 @@
                 <input type="text" name="car_price">
                 <label>Stock available: </label>
                 <input type="text" name="car_stock">
+                <label>Type of car:</label>
                 <select name="car_type">
-                    <option>Select a type</option>
                     <option>Car</option>
                     <option>Special</option>
                     <option>Truck</option>
