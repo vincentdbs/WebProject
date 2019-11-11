@@ -18,7 +18,7 @@
         <ol class="header_main-menu" id="links">
             <li><a href="ConnexionPage.php">Login</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="../HTML/HomePage.html">Home</a></li>
+            <li><a href="HomePage.php">Home</a></li>
         </ol>
         <a class="icon" onclick="displayMenu()"><img src="../Icon/burger_menu.png" id="burger_menu"></a>
     </div>
@@ -29,7 +29,7 @@
                 <h1>Car rental</h1>
                 <p>Your need a car for a quick travel with your family, go shopping or just visit the city.<br>
                     Select one from a huge collection of cars.</p>
-                <button class="main-button-rent button-more">Find out more</button>
+                <button class="main-button-rent button-more" onclick="location.href = 'SelectionCar.php';">Find out more</button>
             </div>
         </div>
         <div class="main-hero-image image2">
@@ -37,7 +37,7 @@
                 <h1>Special Event</h1>
                 <p>You want to show off in front of your friends with a powerful sport car. We have what you need.<br>
                     You can also choose a classic car, limousine or wedding car because everyday is a special day.</p>
-                <button class="main-button-rent button-more">Find out more</button>
+                <button class="main-button-rent button-more" onclick="location.href = 'SelectionCar.php';">Find out more</button>
             </div>
         </div>
         <div class="main-hero-image image3">
@@ -45,7 +45,7 @@
                 <h1>Truck</h1>
                 <p>Your kid has just moved in and you car can't take the couch in the car boot. <br>
                 Don't worry ! We have a lot of trucks from several size for all different occasions.</p>
-                <button class="main-button-rent button-more">Find out more</button>
+                <button class="main-button-rent button-more" onclick="location.href = 'SelectionCar.php';">Find out more</button>
             </div>
         </div>
     </main>

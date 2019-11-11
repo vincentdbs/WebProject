@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Booking</title>
+    <title>Select car</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/Header.css">
     <link rel="stylesheet" href="../CSS/All.css">
@@ -23,19 +23,6 @@
     <div class="center">
         <form action="" method="post" class="form-booking">
             <h2>Your order</h2>
-            <label>Pickup location</label>
-            <select>
-                <option>Select a location</option>
-                <option>Test1</option>
-                <option>Test1</option>
-                <option>Test1</option>
-            </select>
-            <label>Return location</label>
-            <select>
-                <option>Select a location</option>
-                <option>Test1</option>
-                <option>Test1</option>
-                <option>Test1</option>
             </select>
             <label>Pickup date</label>
             <input type="date">
