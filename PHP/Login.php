@@ -29,14 +29,10 @@
     if($_SESSION['user_role']==="admin")
     {
         $name = $_SESSION['user_first_name'] . " " . $_SESSION['user_last_name'];
-        echo "<script>alert('Welcome back! ". $name ."');";
-        echo "window.location.href='../HTML/MyProfile.php';</script>";
-        //echo 'first = ' . $_SESSION['user_first_name'] . 'last= ' . $_SESSION['user_last_name'];
-
+        echo "<script>window.location.href='../HTML/MyProfile.php';</script>";
     }
     else if($_SESSION['user_role']==="user")
     {
-        echo "<script>alert('Welcome back! admin');";
         echo "window.location.href='../HTML/HomePage.php';</script>";
     }
 ?>

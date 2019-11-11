@@ -2,7 +2,7 @@
     session_start();
     if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
         //TODO change redirection si user pas connecté
-        include "../HTML/ConnexionPage.php";
+        header('location: ConnexionPage.php');
     }
 ?>
 
@@ -49,13 +49,13 @@
         <div class="category">
             <h2>Password</h2>
             <p class="little">You want to change your password, nothing more simple. Enter your old password then type your new one and confirm it. That's it !</p>
-            <form>
+            <form action="../PHP/EditPassword.php" method="post">
                 <label>Old password:</label>
-                <input type="password" class="input-account">
+                <input type="password" class="input-account" name="pwd_previous">
                 <label>New password:</label>
-                <input type="password" class="input-account">
+                <input type="password" class="input-account" name="pwd_new">
                 <label>Confirm password:</label>
-                <input type="password" class="input-account">
+                <input type="password" class="input-account" name="pwd_confirm">
                 <input type="submit" value="Save" class="button-save">
             </form>
         </div>
