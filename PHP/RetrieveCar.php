@@ -36,6 +36,7 @@ while($rows = mysqli_fetch_array($result)){
     echo "<p>Seats: " . $rows['car_nb_seats'] . "</p>";
     echo "<p>Doors: " . $rows['car_nb_doors'] . "</p>";
     echo "<p>Price: " . $rows['car_price'] . "</p>";
+    //TODO changer la reference de l'image
     echo "<img src='../Icon/edit.png' class='icon-slide-up'>";
     echo "</div> </div> </div>";
 }
