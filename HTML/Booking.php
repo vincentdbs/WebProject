@@ -20,23 +20,30 @@
     ?>
 
     <main>
-<!--            TODO completer avec le file php-->
         <div class="main-hero-image image">
             <div class="center">
                 <form action="" method="post" class="form-booking">
-                    <h2>Your order</h2>
-                    <label>Type of car:</label>
-                    <select>
-                        <option>Select a location</option>
-                        <option>Car</option>
-                        <option>Special</option>
-                        <option>Truck</option>
-                    </select>
-                    <label>Pickup date</label>
-                    <input type="date">
-                    <label>Return date</label>
-                    <input type="date">
-                    <button type="submit" class="button-booking">Search</button>
+                    <div>
+                        <label>Type of car: </label>
+                            <select>
+                                <option value="">Select a location</option>
+                                <option value="Car">Car</option>
+                                <option value="Special">Special</option>
+                                <option value="Truck">Truck</option>
+                            </select>
+                    </div>
+                    <div>
+                        <label>Pickup date</label>
+                        <input type="date">
+
+                    </div>
+                    <div>
+                        <label>Return date</label>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <input type="submit" id="button_booking" class="button-booking" value="Search">
+                    </div>
                 </form>
             </div>
         </div>

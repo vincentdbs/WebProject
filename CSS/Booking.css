@@ -26,6 +26,14 @@
     margin: 0 auto;
     padding: 24px;
     background-color: #222831;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.form-booking > div{
+    flex: 1;
+    margin: 0 12px;
+    vertical-align: center;
 }
 
 .form-booking input, .form-booking select, .form-booking label{
@@ -39,10 +47,15 @@
     width: 100%;
 }
 
-.form-booking label, .form-booking p{
+.form-booking label{
     color: white;
-    padding: 8px 0;
-  }
+    margin-bottom: 6px;
+}
+
+#button_booking{
+    height: 100%;
+    margin: auto 0;
+}
 
 option{
     padding: 12px;
@@ -50,7 +63,18 @@ option{
 
 @media (min-device-width: 0px) and (max-device-width: 480px) {
     .form-booking{
-        width: 80%;
+        width: 90%;
+        display: block;
+        padding: 12px;
+    }
+
+    .form-booking label{
+        color: white;
+        margin: 12px 0;
+    }
+
+    .form-booking input{
+        margin: 12px 0;
     }
 
     .center{
@@ -64,7 +88,18 @@ option{
 
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
     .form-booking{
-        width: 70%;
+        width: 80%;
+        display: block;
+        padding: 20px;
+    }
+
+    .form-booking label{
+        color: white;
+        margin: 16px 0;
+    }
+
+    .form-booking input{
+        margin: 16px 0;
     }
 
     .center{
@@ -78,11 +113,11 @@ option{
 
 @media (min-device-width: 1025px) {
     .form-booking{
-        width: 60%;
+        width: 70%;
     }
 
     .center{
-        top: 25%;
+        top: 35%;
     }
 
     .form-booking select, .form-booking input{
