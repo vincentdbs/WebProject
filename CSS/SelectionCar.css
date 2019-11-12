@@ -4,31 +4,8 @@
     padding-bottom: 16px;
 }
 
-.form-booking{
-    margin: 0 auto;
-    padding: 24px;
-    background-color: black;
-}
-
-.form-booking input, .form-booking select, .form-booking label{
-    display: inline-block;
-}
-
-.form-booking select, .form-booking input{
-    color: black;
-    text-decoration: none;
-    border: none;
-    height: 30px;
-    width: 20%;
-}
-
-.form-booking label, .form-booking p{
-    color: white;
-    padding: 8px 0;
-}
-
-option{
-    padding: 12px;
+#button_selection{
+    height: 100%;
 }
 
 /*Filtre */
@@ -77,10 +54,7 @@ option{
     height: 250px;
     margin: 0 auto;
 }
-
-.content > p{
-    margin: 0 8px;
-}
+/*Fix affichage des lignes*/
 
 /*TODO le mettre dans le Button.css*/
 .button-car-booking{
@@ -119,14 +93,6 @@ option{
     }
 
 
-    .form-booking select, .form-booking input{
-        height: 25px;
-    }
-
-    .form-booking select, .form-booking input, .form-booking label{
-        width: 100%;
-    }
-
     .selection select{
         margin: 4px 0;
     }
@@ -150,15 +116,6 @@ option{
         margin: 24px auto;
     }
 
-    .form-booking{
-        width: 70%;
-    }
-
-
-    .form-booking select, .form-booking input{
-        height: 30px;
-    }
-
     /*Card car*/
 
     .card-column{
@@ -175,22 +132,4 @@ option{
     .center{
         margin: 32px auto;
     }
-
-    .form-booking{
-        width: 60%;
-    }
-
-    .form-booking select, .form-booking input{
-        height: 35px;
-    }
-
-    .form-booking{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .form-booking > select input {
-        flex: 1;
-    }
-
 }

@@ -21,24 +21,24 @@
 
     <main>
         <div class="main-hero-image image">
-            <div class="center">
-                <form action="" method="post" class="form-booking">
+            <div class="center-booking">
+                <form action="../HTML/SelectionCar.php" method="post" class="form-booking">
                     <div>
-                        <label>Type of car: </label>
-                            <select>
-                                <option value="">Select a location</option>
-                                <option value="Car">Car</option>
-                                <option value="Special">Special</option>
-                                <option value="Truck">Truck</option>
-                            </select>
+                        <label>Type of car:</label>
+                        <select>
+                            <option value="">Select a location</option>
+                            <option value="Car">Car</option>
+                            <option value="Special">Special</option>
+                            <option value="Truck">Truck</option>
+                        </select>
                     </div>
                     <div>
-                        <label>Pickup date</label>
+                        <label>Pickup date:</label>
                         <input type="date">
 
                     </div>
                     <div>
-                        <label>Return date</label>
+                        <label>Return date:</label>
                         <input type="date">
                     </div>
                     <div>

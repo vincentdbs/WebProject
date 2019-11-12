@@ -33,11 +33,23 @@ while($rows = mysqli_fetch_array($result)){
     echo "<div class=\"card-content\">";
     echo "<div class=\"content\">";
     echo "<img src=\"../Image/photography-of-blue-wagon-audi-1035108.jpg\" class=\"card-car-image\">";
-    echo "<p>Seats: " . $rows['car_nb_seats'] . "</p>";
-    echo "<p>Doors: " . $rows['car_nb_doors'] . "</p>";
-    echo "<p>Price: " . $rows['car_price'] . "</p>";
-    //TODO changer la reference de l'image
+//    echo "<p>Seats: " . $rows['car_nb_seats'] . "</p>";
+//    echo "<p>Doors: " . $rows['car_nb_doors'] . "</p>";
+//    echo "<p>Price: " . $rows['car_price'] . "</p>";
+    echo "<table>";
+    echo "<tr>";
+    echo "<td><p>Seats:</p></td>";
+    echo "<td><p>" . $rows['car_nb_seats'] . "</p></td>";
+    echo "<td><p>Doors:</p></td>";
+    echo "<td><p>" . $rows['car_nb_doors'] . "</p></td>";
+    echo "<td><p>Price:</p></td>";
+    echo "<td><p>" . $rows['car_price'] . "</p></td>";
+    echo "</tr>";
+    echo "</table>";
+    //TODO changer la reference de l'image depuis la bdd
     echo "<img src='../Icon/edit.png' class='icon-slide-up'>";
     echo "</div> </div> </div>";
 }
 ?>
+
+

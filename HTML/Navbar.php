@@ -10,7 +10,7 @@
                 echo "<li><a href=\"MyProfile.php\">Profile</a></li>";
             }
         ?>
-        <li><a href="SelectionCar.php">Rent</a></li>
+        <li><a href="Booking.php">Rent</a></li>
         <li><a href="HomePage.php">Home</a></li>
     </ol>
     <a class="icon" onclick="displayMenu()"><img src="../Icon/burger_menu.png" id="burger_menu"></a>

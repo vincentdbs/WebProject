@@ -11,6 +11,7 @@ session_start();
     <link rel="stylesheet" href="../CSS/Header.css">
     <link rel="stylesheet" href="../CSS/All.css">
     <link rel="stylesheet" href="../CSS/SelectionCar.css">
+    <link rel="stylesheet" href="../CSS/Booking.css">
     <link rel="stylesheet" href="../CSS/Text.css">
     <link rel="stylesheet" href="../CSS/Button.css">
 </head>
@@ -25,13 +26,18 @@ session_start();
         <!--            TODO completer avec le file php-->
         <div class="center">
             <form action="" method="post" class="form-booking">
-                <h2>Your order</h2>
-                </select>
-                <label>Pickup date</label>
-                <input type="date">
-                <label>Return date</label>
-                <input type="date">
-                <button type="submit" class="button-booking">Search</button>
+                <div>
+                    <label>Pickup date:</label>
+                    <input type="date">
+
+                </div>
+                <div>
+                    <label>Return date:</label>
+                    <input type="date">
+                </div>
+                <div>
+                    <input type="submit" value="Search" class="button-booking" id="button_selection">
+                </div>
             </form>
         </div>
         <div class="selection">
