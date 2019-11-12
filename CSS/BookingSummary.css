@@ -1,0 +1,101 @@
+body{
+    background-color: #f9fae9;
+}
+
+.summary-booking, .summary-car, .summary-driver{
+    margin: 16px auto;
+    width: 70%;
+    padding: 32px;
+    box-shadow: -3px 3px 10px 1px rgba(153,153,153,1);
+    background-color: white;
+}
+
+.summary-car{
+    overflow: hidden;
+}
+
+.div-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-flex > div{
+    flex: 1;
+}
+
+td{
+    padding: 6px 6px 6px 12px;
+}
+
+form {
+    margin: 16px auto;
+    width: 70%;
+}
+
+form input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #F8FF00;
+    color: black;
+}
+
+@media (min-device-width: 0px) and (max-device-width: 480px) {
+    .summary-booking, .summary-car, .summary-driver, form{
+        width: 90%;
+    }
+
+    .summary-car *{
+        color: white;
+    }
+
+    .image-car{
+        display: none;
+    }
+
+    .summary-car{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.8995973389355743) 0%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0.7035189075630253) 50%, rgba(0,0,0,0.8) 70%, rgba(0,0,0,0.9) 100%), url("../Image/photography-of-blue-wagon-audi-1035108.jpg");
+    }
+
+    .summary-driver-table{
+        width: 100%;
+    }
+}
+
+@media (min-device-width: 481px) and (max-device-width: 1024px) {
+    .summary-booking, .summary-car, .summary-driver, form{
+        width: 80%;
+    }
+    .summary-car *{
+        color: white;
+    }
+
+    .image-car{
+        display: none;
+    }
+
+    .summary-car{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.8995973389355743) 0%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0.7035189075630253) 50%, rgba(0,0,0,0.8) 70%, rgba(0,0,0,0.9) 100%), url("../Image/photography-of-blue-wagon-audi-1035108.jpg");
+    }
+
+    .summary-driver-table{
+        width: 75%;
+    }
+}
+
+@media (min-device-width: 1025px) {
+    .car-image{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../Image/photography-of-blue-wagon-audi-1035108.jpg");
+    }
+
+    .summary-driver-table{
+        width: 50%;
+    }
+}

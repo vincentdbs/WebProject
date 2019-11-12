@@ -47,7 +47,7 @@
         </div>
         <div id="register">
             <div class="left-half" id="left-half-register">
-                <form action="../PHP/Insert_user.php" method="post">
+                <form action="../PHP/InsertUser.php" method="post">
                     <div class="main-login">
                         <h1>Welcome !</h1>
                         <label>First name</label>

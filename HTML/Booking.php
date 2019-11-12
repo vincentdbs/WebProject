@@ -15,15 +15,9 @@
     <link rel="stylesheet" href="../CSS/Button.css">
 </head>
 <body>
-    <div class="header">
-        <img src="../Icon/logo_voiture.png" id="logo_car">
-        <ol class="header_main-menu" id="links">
-            <li><a href="ConnexionPage.php">Login</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="HomePage.php">Home</a></li>
-        </ol>
-        <a class="icon" onclick="displayMenu()"><img src="../Icon/burger_menu.png" id="burger_menu"></a>
-    </div>
+    <?php
+    include "Navbar.php";
+    ?>
 
     <main>
 <!--            TODO completer avec le file php-->
