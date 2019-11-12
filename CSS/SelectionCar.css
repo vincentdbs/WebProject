@@ -90,6 +90,24 @@ option{
     border: none;
 }
 
+.content{
+    position: relative;
+}
+
+.icon-slide-up{
+    position: absolute;
+    bottom : 125%;
+    left: 80%;
+    visibility: hidden;
+}
+
+
+.content:hover .icon-slide-up{
+    top: 80%;
+    visibility: initial;
+    transition: visibility 0.5s;
+}
+
 @media (min-device-width: 0px) and (max-device-width: 480px) {
     /*Form*/
     .center{

@@ -10,7 +10,6 @@
                 echo "<li><a href=\"MyProfile.php\">Profile</a></li>";
             }
         ?>
-
         <li><a href="SelectionCar.php">Rent</a></li>
         <li><a href="HomePage.php">Home</a></li>
     </ol>
