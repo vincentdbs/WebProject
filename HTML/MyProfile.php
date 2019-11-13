@@ -1,7 +1,6 @@
 <?php
     session_start();
     if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
-        //TODO change redirection si user pas connecté
         header('location: ConnexionPage.php');
     }
 ?>

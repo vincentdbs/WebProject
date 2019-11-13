@@ -1,5 +1,17 @@
 <?php
-session_start();
+    session_start();
+
+
+    if ((!(isset($_SESSION['car_type'])) || !(isset($_SESSION['return_date']))) || (!(isset($_SESSION['pickup_date'])))){ //if data unset
+        header('location: ../HTML/Booking.php');
+    }
+    if ((($_SESSION['car_type'] == "") || ($_SESSION['return_date'] == "")) || ($_SESSION['pickup_date'] == "")){ //if data not select
+        header('location: ../HTML/Booking.php');
+    }
+
+//    echo $_SESSION['car_type'] . " : " . $_SESSION['return_date'] . " : " . $_SESSION['pickup_date'];
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,12 +40,12 @@ session_start();
             <form action="" method="post" class="form-booking">
                 <div>
                     <label>Pickup date:</label>
-                    <input type="date">
+                    <input type="date" value="<?php echo $_SESSION['pickup_date']; ?>">
 
                 </div>
                 <div>
                     <label>Return date:</label>
-                    <input type="date">
+                    <input type="date" value="<?php echo $_SESSION['return_date']; ?>">
                 </div>
                 <div>
                     <input type="submit" value="Search" class="button-booking" id="button_selection">
@@ -45,17 +57,18 @@ session_start();
             <form action="../HTML/SelectionCar.php" method="post">
                 <select name="type">
                     <option value="">Vehicle type</option>
-                    <option value="">All</option>
-                    <option value="Car">Car</option>
-                    <option value="Truck">Truck</option>
-                    <option value="Special">Special</option>
+                    <option <?php if ($_SESSION['car_type'] == "All"){ echo 'selected';} ?> value="All">All</option>
+                    <option <?php if ($_SESSION['car_type'] == "Car"){ echo 'selected';} ?> value="Car">Car</option>
+                    <option <?php if ($_SESSION['car_type'] == "Truck"){ echo 'selected';} ?> value="Truck">Truck</option>
+                    <option <?php if ($_SESSION['car_type'] == "Special"){ echo 'selected';} ?> value="Special">Special</option>
                 </select>
                 <select name="nb_seats">
+                    <?php if((isset($_SESSION['car_nb_seats'])) && ($_SESSION['car_nb_seats'] == 4)){ echo 'fsdffd';} ?>
                     <option value="">Number of seats</option>
-                    <option value="">All</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="7">7</option>
+                    <option <?php if((isset($_SESSION['car_nb_seats'])) && ($_SESSION['car_nb_seats'] == "All")){ echo 'selected';} ?>  value="">All</option>
+                    <option <?php if((isset($_SESSION['car_nb_seats'])) && ($_SESSION['car_nb_seats'] == "4")){ echo 'selected';} ?>  value="4">4</option>
+                    <option <?php if((isset($_SESSION['car_nb_seats'])) && ($_SESSION['car_nb_seats'] == "5")){ echo 'selected';} ?> value="5">5</option>
+                    <option <?php if((isset($_SESSION['car_nb_seats'])) && ($_SESSION['car_nb_seats'] == "7")){ echo 'selected';} ?> value="7">7</option>
                 </select>
                 <input type="submit" name="search" value="Search" class="button-search little">
             </form>

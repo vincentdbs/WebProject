@@ -20,6 +20,13 @@ if ((isset($_POST['type']))){
     else if ($nb_seats != ""){
         $sql = $sql . " (car_nb_seats = $nb_seats)";
     }
+
+    $_SESSION['car_nb_seats'] = $nb_seats;
+    $_SESSION['car_type'] = $type;
+    echo $_SESSION['car_nb_seats'] . " " . $_SESSION['car_type'] ;
+}
+else{
+    $sql = $sql . " WHERE car_type ='" .  $_SESSION['car_type'] . "'";
 }
 
 

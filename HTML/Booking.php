@@ -22,11 +22,12 @@
     <main>
         <div class="main-hero-image image">
             <div class="center-booking">
-                <form action="../HTML/SelectionCar.php" method="post" class="form-booking">
+                <form action="../PHP/BookingDate.php" method="post" class="form-booking">
                     <div>
                         <label>Type of car:</label>
-                        <select>
+                        <select name="car_type">
                             <option value="">Select a location</option>
+                            <option value="All">All</option>
                             <option value="Car">Car</option>
                             <option value="Special">Special</option>
                             <option value="Truck">Truck</option>
@@ -34,12 +35,12 @@
                     </div>
                     <div>
                         <label>Pickup date:</label>
-                        <input type="date">
+                        <input type="date" name="pickup_date">
 
                     </div>
                     <div>
                         <label>Return date:</label>
-                        <input type="date">
+                        <input type="date" name="return_date">
                     </div>
                     <div>
                         <input type="submit" id="button_booking" class="button-booking" value="Search">
