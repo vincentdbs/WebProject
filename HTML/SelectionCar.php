@@ -56,19 +56,17 @@
             <h2>Choose your car :</h2>
             <form action="../HTML/SelectionCar.php" method="post">
                 <select name="type">
-                    <option value="">Vehicle type</option>
-                    <option <?php if ($_SESSION['car_type'] == "All"){ echo 'selected';} ?> value="All">All</option>
-                    <option <?php if ($_SESSION['car_type'] == "Car"){ echo 'selected';} ?> value="Car">Car</option>
-                    <option <?php if ($_SESSION['car_type'] == "Truck"){ echo 'selected';} ?> value="Truck">Truck</option>
-                    <option <?php if ($_SESSION['car_type'] == "Special"){ echo 'selected';} ?> value="Special">Special</option>
+                    <option value="All">All</option>
+                    <option value="Car">Car</option>
+                    <option value="Truck">Truck</option>
+                    <option value="Special">Special</option>
                 </select>
                 <select name="nb_seats">
-                    <?php if((isset($_SESSION['car_nb_seats'])) && ($_SESSION['car_nb_seats'] == 4)){ echo 'fsdffd';} ?>
                     <option value="">Number of seats</option>
-                    <option <?php if((isset($_SESSION['car_nb_seats'])) && ($_SESSION['car_nb_seats'] == "All")){ echo 'selected';} ?>  value="">All</option>
-                    <option <?php if((isset($_SESSION['car_nb_seats'])) && ($_SESSION['car_nb_seats'] == "4")){ echo 'selected';} ?>  value="4">4</option>
-                    <option <?php if((isset($_SESSION['car_nb_seats'])) && ($_SESSION['car_nb_seats'] == "5")){ echo 'selected';} ?> value="5">5</option>
-                    <option <?php if((isset($_SESSION['car_nb_seats'])) && ($_SESSION['car_nb_seats'] == "7")){ echo 'selected';} ?> value="7">7</option>
+                    <option value="">All</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
                 </select>
                 <input type="submit" name="search" value="Search" class="button-search little">
             </form>

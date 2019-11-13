@@ -26,7 +26,6 @@
                     <div>
                         <label>Type of car:</label>
                         <select name="car_type">
-                            <option value="">Select a location</option>
                             <option value="All">All</option>
                             <option value="Car">Car</option>
                             <option value="Special">Special</option>

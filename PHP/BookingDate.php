@@ -4,7 +4,7 @@
     $_SESSION['return_date'] = $_POST['return_date'];
     $_SESSION['car_type'] = $_POST['car_type'];
 
-    echo $_SESSION['car_type'] . " : " . $_SESSION['return_date'] . " : " . $_SESSION['pickup_date'];
+    //echo $_SESSION['car_type'] . " : " . $_SESSION['return_date'] . " : " . $_SESSION['pickup_date'];
 
     header('location: ../HTML/SelectionCar.php');
 ?>
