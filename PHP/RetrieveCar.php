@@ -36,7 +36,6 @@
         die("<p> Sorry, we do not find anything that correspond to your research ! </p>");
     }
 
-    echo $sql;
 
 
     while($rows = mysqli_fetch_array($result)){
@@ -58,7 +57,7 @@
 //        echo "<input type='submit' value='Choose' class='button-booking'>";
 //        echo "</form>";
         //echo "<button class='button-booking' href='localhost/Projet/HTML/SummaryBooking.php?car_id=" . $rows['car_id']  ">Choose</button>";
-        echo "<a class='link-booking-summary' href='BookingSummary.php?car_id=" .  $rows['car_id'] . "'>Book</a>";
+        echo "<a class='link-booking-summary' href='BookingSummary.php?car_id=" .  $rows['car_id'] . "&pickup_date=" . $_SESSION['pickup_date'] . "&return_date=" . $_SESSION['return_date'] ."'>Book</a>";
         echo "</div> </div> </div>";
     }
 ?>

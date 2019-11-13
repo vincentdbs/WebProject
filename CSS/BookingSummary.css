@@ -46,6 +46,10 @@ form input{
         width: 90%;
     }
 
+    .summary-booking, .summary-car, .summary-driver{
+        padding: 16px;
+    }
+
     .summary-car *{
         color: white;
     }
@@ -63,12 +67,21 @@ form input{
     .summary-driver-table{
         width: 100%;
     }
+
+    td{
+        padding: 4px 0;
+    }
 }
 
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
     .summary-booking, .summary-car, .summary-driver, form{
         width: 80%;
     }
+
+    .summary-booking, .summary-car, .summary-driver{
+        padding: 16px;
+    }
+
     .summary-car *{
         color: white;
     }
@@ -85,6 +98,10 @@ form input{
 
     .summary-driver-table{
         width: 75%;
+    }
+
+    td{
+        padding: 6px 6px 6px 6px;
     }
 }
 

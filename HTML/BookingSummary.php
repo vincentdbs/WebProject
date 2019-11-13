@@ -1,5 +1,6 @@
 <?php
 session_start();
+include "../PHP/BookingSelectionCar.php"
 ?>
 <!DOCTYPE html>
 <html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
@@ -31,7 +32,7 @@ session_start();
                     <table style="width:100%">
                         <tr>
                             <td class="test"><i class="material-icons">perm_identity</i></td>
-                            <td><p>icon nb passager</p></td>
+                            <td><p><?php echo $_SESSION['car_nb_seats'] ?></p></td>
                         </tr>
                         <tr>
                             <td><i class="material-icons">local_gas_station</i></td>
@@ -39,7 +40,7 @@ session_start();
                         </tr>
                         <tr>
                             <td><i class="material-icons">local_gas_station</i></td>
-                            <td><p>plein d'essence</p></td>
+                            <td><p>Max fuel</p></td>
                         </tr>
                     </table>
                 </div>
@@ -70,15 +71,15 @@ session_start();
             <table class="summary-driver-table">
                 <tr>
                     <td><p>First name:</p></td>
-                    <td><p>FIRST NAME</p></td>
+                    <td><p><?php echo $_SESSION['user_first_name'] ?></p></td>
                 </tr>
                 <tr>
                     <td><p>Last name:</p></td>
-                    <td> <p>LAST NAME</p></td>
+                    <td> <p><?php echo $_SESSION['user_last_name'] ?></p></td>
                 </tr>
                 <tr>
                     <td><p>Email:</p></td>
-                    <td><p>Email</p></td>
+                    <td><p><?php echo $_SESSION['user_email'] ?></p></td>
                 </tr>
             </table>
         </div>
@@ -88,19 +89,19 @@ session_start();
             <table class="summary-driver-table">
                 <tr>
                     <td><p>Pick up date:</p></td>
-                    <td><p>PICK UP</p></td>
+                    <td><p><?php echo $_GET['pickup_date'] ?></p></td>
                 </tr>
                 <tr>
                     <td><p>Return date:</p></td>
-                    <td><p>RETURN DATE</p></td>
+                    <td><p><?php echo $_GET['return_date'] ?></p></td>
                 </tr>
                 <tr>
                     <td><p>Location:</p></td>
-                    <td><p>APU</p></td>
+                    <td><p>Asia Pacific University</p></td>
                 </tr>
                 <tr>
-                    <td><p>Price:</p></td>
-                    <td><p>PRICE</p></td>
+                    <td><p>Total price (RM):</p></td>
+                    <td><p><?php include_once "../PHP/BookingSelectionCar.php"; echo getPrice(); ?></p></td>
                 </tr>
             </table>
         </div>
