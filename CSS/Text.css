@@ -16,6 +16,11 @@ a:hover{
 
 input{
     outline: none;
+    background-color: white;
+}
+
+select{
+    background-color: white;
 }
 
 

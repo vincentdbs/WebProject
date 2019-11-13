@@ -36,14 +36,14 @@
         die("<p> Sorry, we do not find anything that correspond to your research ! </p>");
     }
 
+    echo $sql;
+
+
     while($rows = mysqli_fetch_array($result)){
         echo "<div class=\"card-column\">";
         echo "<div class=\"card-content\">";
         echo "<div class=\"content\">";
         echo "<img src=\"../Image/photography-of-blue-wagon-audi-1035108.jpg\" class=\"card-car-image\">";
-    //    echo "<p>Seats: " . $rows['car_nb_seats'] . "</p>";
-    //    echo "<p>Doors: " . $rows['car_nb_doors'] . "</p>";
-    //    echo "<p>Price: " . $rows['car_price'] . "</p>";
         echo "<table>";
         echo "<tr>";
         echo "<td><p>Seats:</p></td>";
@@ -54,9 +54,11 @@
         echo "<td><p>" . $rows['car_price'] . "</p></td>";
         echo "</tr>";
         echo "</table>";
-        echo "<form action='' method='post'>";
-        echo "<input type='submit' value='Choose' class='button-booking'>";
-        echo "</form>";
+//        echo "<form action='' method='post'>";
+//        echo "<input type='submit' value='Choose' class='button-booking'>";
+//        echo "</form>";
+        //echo "<button class='button-booking' href='localhost/Projet/HTML/SummaryBooking.php?car_id=" . $rows['car_id']  ">Choose</button>";
+        echo "<a class='link-booking-summary' href='BookingSummary.php?car_id=" .  $rows['car_id'] . "'>Book</a>";
         echo "</div> </div> </div>";
     }
 ?>
