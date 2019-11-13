@@ -24,6 +24,7 @@
     width: 33%;
     padding: 0 10px;
     height: 50%;
+    margin: 12px 0;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
@@ -64,24 +65,6 @@
     border: none;
 }
 
-.content{
-    position: relative;
-}
-
-.icon-slide-up{
-    position: absolute;
-    bottom : 125%;
-    left: 80%;
-    visibility: hidden;
-}
-
-
-.content:hover .icon-slide-up{
-    top: 80%;
-    visibility: initial;
-    transition: visibility 0.5s;
-}
-
 @media (min-device-width: 0px) and (max-device-width: 480px) {
     /*Form*/
     .center{
@@ -102,7 +85,7 @@
         float: none;
         width: 90%;
         display: block;
-        margin: 6px auto;
+        margin: 24px auto;
     }
 
     .card-car-image{

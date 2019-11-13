@@ -54,8 +54,9 @@
         echo "<td><p>" . $rows['car_price'] . "</p></td>";
         echo "</tr>";
         echo "</table>";
-        //TODO changer la reference de l'image depuis la bdd
-        echo "<img src='../Icon/edit.png' class='icon-slide-up'>";
+        echo "<form action='' method='post'>";
+        echo "<input type='submit' value='Choose' class='button-booking'>";
+        echo "</form>";
         echo "</div> </div> </div>";
     }
 ?>
