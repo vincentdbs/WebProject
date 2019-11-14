@@ -31,6 +31,8 @@
         $nb_day = $nb_day->format("%a");
         $nb_day = number_format($nb_day) ;
 
+        //todo fix car nb day = nb day et pas price
+        $_SESSION['booking_price'] = $nb_day;
         return $nb_day;
     }
 
