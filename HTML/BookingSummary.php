@@ -32,15 +32,15 @@ include "../PHP/BookingSelectionCar.php"
                     <table style="width:100%">
                         <tr>
                             <td class="test"><i class="material-icons">perm_identity</i></td>
-                            <td><p><?php echo $_SESSION['car_nb_seats'] ?></p></td>
+                            <td><?php echo $_GET['car_nb_seats'] ?></td>
                         </tr>
                         <tr>
                             <td><i class="material-icons">local_gas_station</i></td>
-                            <td><p>icon nb doors</p></td>
+                            <td><?php echo $_GET['car_nb_doors'] ?></td>
                         </tr>
                         <tr>
                             <td><i class="material-icons">local_gas_station</i></td>
-                            <td><p>Max fuel</p></td>
+                            <td>Max fuel</td>
                         </tr>
                     </table>
                 </div>
@@ -48,15 +48,15 @@ include "../PHP/BookingSelectionCar.php"
                     <table style="width:100%">
                         <tr>
                             <td><i class="material-icons">done</i></td>
-                            <td><p>Free cancellation</p></td>
+                            <td>Free cancellation</td>
                         </tr>
                         <tr>
                             <td><i class="material-icons">done</i></td>
-                            <td><p>Insurance</p></td>
+                            <td>Insurance</td>
                         </tr>
                         <tr>
                             <td><i class="material-icons">done</i></td>
-                            <td><p>Theft protection</p></td>
+                            <td>Theft protection</td>
                         </tr>
                     </table>
                 </div>

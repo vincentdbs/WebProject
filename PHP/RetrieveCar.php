@@ -1,6 +1,9 @@
 <?php
+
+
     function retrieveCar(){
         include("Db_connexion.php");
+
         $sql = "SELECT * FROM car";
 
         if ((isset($_POST['type']))){
@@ -30,7 +33,7 @@
                 $sql = $sql . " WHERE car_type ='" .  $_GET['car_type'] . "'";
             }
         }
-
+        //TODO check pourquoi $con en rouge mais pas de crash si dans la fonction
         $result = mysqli_query($con, $sql);
         if (mysqli_num_rows($result) <= 0){
             die("<p> Sorry, we do not find anything that correspond to your research ! </p>");
@@ -51,34 +54,23 @@
             echo "<td><p>" . $rows['car_price'] . "</p></td>";
             echo "</tr>";
             echo "</table>";
-//        echo "<form action='' method='post'>";
-//        echo "<input type='submit' value='Choose' class='button-booking'>";
-//        echo "</form>";
-            //echo "<button class='button-booking' href='localhost/Projet/HTML/SummaryBooking.php?car_id=" . $rows['car_id']  ">Choose</button>";
-            echo "<a class='link-booking-summary' href='BookingSummary.php?car_id=" .  $rows['car_id'] . "&pickup_date=" . $_SESSION['pickup_date'] . "&return_date=" . $_SESSION['return_date'] ."'>Book</a>";
+            echo "<a class='link-booking-summary' href='BookingSummary.php?car_id=" .  $rows['car_id'] . "&pickup_date=" . $_GET['pickup_date'] . "&return_date=" . $_GET['return_date'] . "&car_nb_seats=" . $rows['car_nb_seats'] . "&car_nb_doors=" . $rows['car_nb_doors'] ."'>Book</a>";
             echo "</div> </div> </div>";
         }
     }
 
     function getActualURL(){
-
-// Program to display URL of current page.
-
         if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
             $link = "https";
         else
             $link = "http";
 
-// Here append the common URL characters.
         $link .= "://";
 
-// Append the host(domain name, ip) to the URL.
         $link .= $_SERVER['HTTP_HOST'];
 
-// Append the requested resource location to the URL
         $link .= $_SERVER['REQUEST_URI'];
 
-// Print the link
         echo $link;
     }
 ?>

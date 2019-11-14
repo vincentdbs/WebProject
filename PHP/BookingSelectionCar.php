@@ -6,14 +6,10 @@
         header('location: ConnexionPage.php');
     }
 
-    $car_id = $_GET['car_id'];
     $pickup_date = $_GET['pickup_date'];
     $return_date = $_GET['return_date'];
 
-    include "Db_connexion.php";
-    $car_info = getCarInfo($car_id, $con);
-
-
+    $car_info = getCarInfo();
 
 
     function parameterValid(){
@@ -38,8 +34,10 @@
         return $nb_day;
     }
 
-    function getCarInfo($car_id, $con){
-        $sql = "SELECt * FROM car WHERE car_id='" . $_SESSION['car_id'] . "'";
+    function getCarInfo(){
+        include "Db_connexion.php";
+        $info = array();
+        $sql = "SELECT * FROM car WHERE car_id='" . $_GET['car_id'] . "'";
         $result = mysqli_query($con, $sql);
         while($rows = mysqli_fetch_array($result)){
             array_push($info, $rows['car_id']);
@@ -51,6 +49,7 @@
             array_push($info, $rows['car_brand']);
             array_push($info, $rows['car_type']);
         }
+        return $info;
     }
 
 ?>
