@@ -1,16 +1,15 @@
 <?php
     session_start();
 
-
-    if ((!(isset($_SESSION['car_type'])) || !(isset($_SESSION['return_date']))) || (!(isset($_SESSION['pickup_date'])))){ //if data unset
+    if ((!(isset($_GET['car_type'])) || !(isset($_GET['return_date']))) || (!(isset($_GET['pickup_date'])))){ //if data unset
         header('location: ../HTML/Booking.php');
     }
-    if ((($_SESSION['car_type'] == "") || ($_SESSION['return_date'] == "")) || ($_SESSION['pickup_date'] == "")){ //if data not select
+    if ((($_GET['car_type'] == "") || ($_GET['return_date'] == "")) || ($_GET['pickup_date'] == "")){ //if data not select
         header('location: ../HTML/Booking.php');
     }
-
-//    echo $_SESSION['car_type'] . " : " . $_SESSION['return_date'] . " : " . $_SESSION['pickup_date'];
-
+    if (((($_GET['car_type'] != "All") && ($_GET['car_type'] != "Car")) && ($_GET['car_type'] != "Special")) && ($_GET['car_type'] != "Truck")){
+        header('location: ../HTML/Booking.php');
+    }
 
 ?>
 <!DOCTYPE html>
@@ -40,12 +39,12 @@
             <form action="" method="post" class="form-booking">
                 <div>
                     <label>Pickup date:</label>
-                    <input type="date" value="<?php echo $_SESSION['pickup_date']; ?>">
+                    <input type="date" value="<?php echo $_GET['pickup_date']; ?>">
 
                 </div>
                 <div>
                     <label>Return date:</label>
-                    <input type="date" value="<?php echo $_SESSION['return_date']; ?>">
+                    <input type="date" value="<?php echo $_GET['return_date']; ?>">
                 </div>
                 <div>
                     <input type="submit" value="Search" class="button-booking" id="button_selection">
@@ -54,7 +53,7 @@
         </div>
         <div class="selection">
             <h2>Choose your car :</h2>
-            <form action="../HTML/SelectionCar.php" method="post">
+            <form action="<?php  include_once "../PHP/RetrieveCar.php"; getActualURL();?>" method="post">
                 <select name="type">
                     <option value="All">All</option>
                     <option value="Car">Car</option>
@@ -73,7 +72,7 @@
         </div>
         <div class="result">
             <?php
-            include "../PHP/RetrieveCar.php";
+            include_once "../PHP/RetrieveCar.php"; retrieveCar();
             ?>
         </div>
     </main>

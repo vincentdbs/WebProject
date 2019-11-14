@@ -58,7 +58,7 @@
         pickup_date = pickup_date.value;
         let return_date = document.getElementById("booking_return_date");
         return_date = return_date.value;
-        let url = "SelectionCar.php?type=" + selectedOption + "&pick_up_date=" + pickup_date + "&return_date=" + return_date;
+        let url = "SelectionCar.php?car_type=" + selectedOption + "&pickup_date=" + pickup_date + "&return_date=" + return_date;
 
         if ((return_date === "") || (pickup_date === "")){
             alert("You must select pickup date and return date.")
