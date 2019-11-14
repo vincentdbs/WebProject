@@ -54,6 +54,17 @@
 
 #button_booking{
     height: 100%;
+    background-color: #F8FF00;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+#button_booking:hover{
+    font-weight: bold;
+    color: black;
+
 }
 
 option{

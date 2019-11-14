@@ -22,10 +22,10 @@
     <main>
         <div class="main-hero-image image">
             <div class="center-booking">
-                <form action="../PHP/BookingDate.php" method="post" class="form-booking">
+                <div class="form-booking">
                     <div>
                         <label>Type of car:</label>
-                        <select name="car_type">
+                        <select name="car_type" id="booking_type_list">
                             <option value="All">All</option>
                             <option value="Car">Car</option>
                             <option value="Special">Special</option>
@@ -34,21 +34,40 @@
                     </div>
                     <div>
                         <label>Pickup date:</label>
-                        <input type="date" name="pickup_date">
+                        <input type="date" name="pickup_date" id="booking_pickup_date">
 
                     </div>
                     <div>
                         <label>Return date:</label>
-                        <input type="date" name="return_date">
+                        <input type="date" name="return_date" id="booking_return_date">
                     </div>
                     <div>
-                        <input type="submit" id="button_booking" class="button-booking" value="Search">
+                        <a id="button_booking" onclick="urlConstruct()">Search</a>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </main>
 
     <script src="../JS/navbar.js"></script>
+<script>
+    function urlConstruct() {
+        let list = document.getElementById("booking_type_list");
+        let selectedOption = list.options[list.selectedIndex].value;
+        let pickup_date = document.getElementById("booking_pickup_date")
+        pickup_date = pickup_date.value;
+        let return_date = document.getElementById("booking_return_date");
+        return_date = return_date.value;
+        let url = "SelectionCar.php?type=" + selectedOption + "&pick_up_date=" + pickup_date + "&return_date=" + return_date;
+
+        if ((return_date === "") || (pickup_date === "")){
+            alert("You must select pickup date and return date.")
+        }
+        else{
+            let link = document.getElementById("button_booking");
+            link.setAttribute("href", url);
+        }
+    }
+</script>
 </body>
 </html>
