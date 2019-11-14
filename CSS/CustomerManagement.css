@@ -1,0 +1,40 @@
+.table-user{
+    margin: 32px auto;
+    border-collapse: collapse;
+}
+
+thead tr{
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+thead tr > td{
+    font-family: Montserrat;
+    background-color: #F8FF00;
+}
+
+td{
+    background-color: white;
+    font-family: Nunito;
+    padding: 12px;
+    height: 20px;
+}
+
+@media (min-device-width: 0px) and (max-device-width: 480px) {
+    .table-user{
+        width: 90%;
+    }
+}
+
+@media (min-device-width: 481px) and (max-device-width: 1024px) {
+    .table-user{
+        width: 80%;
+    }
+}
+
+@media (min-device-width: 1025px) {
+    .table-user{
+        width: 70%;
+    }
+}
