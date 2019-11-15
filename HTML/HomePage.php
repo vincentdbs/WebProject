@@ -24,8 +24,8 @@
         <div class="main-hero-image image1">
             <div class="main-hero-text">
                 <h1>Car rental</h1>
-                <p>Your need a car for a quick travel with your family, go shopping or just visit the city.<br>
-                    Select one from a huge collection of cars.</p>
+                <p>You need a car for a quick travel with your family, go shopping or just visit the city.<br>
+                    Select one from a huge collection of amazing cars.</p>
                 <button class="main-button-rent button-more" onclick="location.href = 'SelectionCar.php';">Find out more</button>
             </div>
         </div>
@@ -46,10 +46,6 @@
             </div>
         </div>
     </main>
-
-    <footer>
-
-    </footer>
     <script src="../JS/navbar.js"></script>
 </body>
 </html>

@@ -46,7 +46,7 @@
                         <div class='item-div'>
                             <table>
                                 <tr>
-                                    <td>#:</td>
+                                    <td>#</td>
                                     <td>" . $rows_car['car_id'] . "</td>
                                 </tr>
                                 <tr>

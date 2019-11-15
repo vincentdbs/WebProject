@@ -12,7 +12,8 @@
         ?>
         <?php
             if (isset($_SESSION['user_role']) && $_SESSION['user_role'] == "admin"){
-                echo "<li><a href='../HTML/CustomerManagement.php'>Management</a></li>";
+                echo "<li><a href='../HTML/CustomerManagement.php'>Users</a></li>";
+                echo "<li><a href='../HTML/AddCar.php'>Add</a></li>";
             }
             else{
                 echo "<li><a href='Booking.php'>Rent</a></li>";

@@ -59,9 +59,14 @@
             </form>
         </div>
 
-        <div class="category">
-            <h2>History</h2>
-        </div>
+        <?php
+            if($_SESSION['user_role'] == 'user'){
+                echo " <div class=\"category\">
+                         <h2>History</h2>
+                       </div>";
+            }
+        ?>
+
     </div>
 
     <script src="../JS/navbar.js"></script>
