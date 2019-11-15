@@ -28,11 +28,12 @@ include("Navbar.php");
         <table class="table-user">
             <thead>
                 <tr>
-                    <td>ID</td>
-                    <td>First Name</td>
-                    <td>Last Name</td>
-                    <td>Email</td>
-                    <td>On loan ?</td>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>On loan ?</th>
+                    <th></th>
                 </tr>
             </thead>
             <?php include("../PHP/GetCustomerManagement.php")?>
@@ -41,5 +42,6 @@ include("Navbar.php");
 </main>
 
 <script src="../JS/navbar.js"></script>
+<script src="../JS/displayItemCustomerManagement.js"></script>
 </body>
 </html>

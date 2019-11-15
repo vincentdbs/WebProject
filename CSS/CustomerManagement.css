@@ -9,9 +9,11 @@ thead tr{
     font-weight: bold;
 }
 
-thead tr > td{
+th{
     font-family: Montserrat;
     background-color: #F8FF00;
+    text-align: left;
+    padding: 12px;
 }
 
 td{
