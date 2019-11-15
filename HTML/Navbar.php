@@ -7,7 +7,7 @@
             }
             else{
                 echo "<li><a href='../PHP/Logout.php'>Logout</a></li>";
-                echo "<li><a href='MyProfile.php'>Profile</a></li>";
+                echo "<li><a href='../HTML/MyProfile.php'>Profile</a></li>";
             }
         ?>
         <?php
@@ -16,7 +16,7 @@
                 echo "<li><a href='../HTML/AddCar.php'>Add</a></li>";
             }
             else{
-                echo "<li><a href='Booking.php'>Rent</a></li>";
+                echo "<li><a href='../HTML/Booking.php'>Rent</a></li>";
             }
         ?>
         <li><a href="HomePage.php">Home</a></li>

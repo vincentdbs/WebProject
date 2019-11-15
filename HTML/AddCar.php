@@ -22,7 +22,7 @@
 <main>
     <div class="main-hero-image image">
         <div class="center">
-            <form action="../PHP/InsertCar.php" method="post" class="form-add-car">
+            <form action="../PHP/InsertCar.php" method="post" class="form-add-car" enctype="multipart/form-data">
                 <h2>Add a car</h2>
 
                 <div class="div-input-label">
@@ -46,6 +46,7 @@
                     <option>Special</option>
                     <option>Truck</option>
                 </select>
+                <input type="file" name="car_photo" id="car_photo">
                 <button type="submit" class="button-booking">Add</button>
             </form>
         </div>
