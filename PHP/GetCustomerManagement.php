@@ -1,23 +1,23 @@
 <?php
     include "Db_connexion.php";
 
-    $sql = 'SELECT * FROM user WHERE user_role="user"';
-    $result = mysqli_query($con, $sql);
-    if (mysqli_num_rows($result) <= 0){
+    $sql_user = 'SELECT * FROM user WHERE user_role="user"';
+    $result_user = mysqli_query($con, $sql_user);
+    if (mysqli_num_rows($result_user) <= 0){
         die("<p> Sorry, we do not find anything that correspond to your research ! </p>");
     }
 
 
-    while($rows = mysqli_fetch_array($result)){
+    while($rows_user = mysqli_fetch_array($result_user)){
         echo "<tr>";
-        echo "<td>" . $rows['user_id'] . "</td>";
-        echo "<td>" . $rows['user_first_name'] . "</td>";
-        echo "<td>" . $rows['user_last_name'] . "</td>";
-        echo "<td>" . $rows['user_email'] . "</td>";
+        echo "<td>" . $rows_user['user_id'] . "</td>";
+        echo "<td>" . $rows_user['user_first_name'] . "</td>";
+        echo "<td>" . $rows_user['user_last_name'] . "</td>";
+        echo "<td>" . $rows_user['user_email'] . "</td>";
 
-        $sql_bis = 'SELECT * FROM booking where booking_user_id=' . $rows['user_id'];
-        $result_bis = mysqli_query($con, $sql_bis);
-        if (mysqli_num_rows($result_bis) <= 0){
+        $sql_booking = 'SELECT * FROM booking where booking_user_id=' . $rows_user['user_id'];
+        $result_booking = mysqli_query($con, $sql_booking);
+        if (mysqli_num_rows($result_booking) <= 0){
             echo "<td>No</td>";
             echo "<td></td>";
         }
@@ -29,40 +29,46 @@
         echo "</tr>";
 //        echo "<tr><td><div style='height: 100px'><p>dfsmjkfds dsml fklsf jsdj flksdf </p> </div></td></tr>";
 
-        while ($rows = mysqli_fetch_array($result_bis)){
-            echo "<tr style='display: none'>
+        while ($rows_booking = mysqli_fetch_array($result_booking)){
+            $sql_car = "SELECT * FROM car WHERE car_id=" . $rows_booking['booking_car_id'];
+            $result_car = mysqli_query($con, $sql_car);
+            if (mysqli_num_rows($result_booking) <= 0){
+                echo "<p>Error</p>";
+            }
+            else{
+                $rows_car = mysqli_fetch_array($result_car);
+                echo "<tr style='display: none'>
                 <td colspan='6'>
                     <div class='item'>
                         <img src='../Image/fiat500.jpg' class='item-image'>
                         <div class='item-div'>
                             <table>
                                 <tr>
-                                    <td>Car id</td>
+                                    <td>#:</td>
+                                    <td>" . $rows_car['car_id'] . "</td>
                                 </tr>
                                 <tr>
-                                    <td>Car nb seats</td>
-                                    <td>Car nb doors</td>
+                                    <td>Nb seats: </td>
+                                    <td>" .  $rows_car['car_nb_seats'] ."</td>
+                                    <td>Nb doors: </td>
+                                    <td>" . $rows_car['car_nb_doors'] . "</td>
                                 </tr>
                                 <tr>
-                                    <td>Pickup </td>
-                                    <td>Return</td>
+                                    <td>Pickup date: </td>
+                                    <td>" . $rows_booking['booking_pickup_date'] . "</td>
+                                    <td>Return date: </td>
+                                    <td>" . $rows_booking['booking_return_date'] . "</td>
                                 </tr>
                                 <tr>
-                                    <td>Price </td>
+                                    <td>Price (RM): </td>
+                                    <td>" . $rows_booking['booking_price'] . "</td>
                                 </tr>
                             </table>
                         </div>
                     </div>
                 </td>
             </tr>";
+            }
         }
     }
 ?>
-
-<!--<img src="../Image/fiat500.jpg">-->
-<!--<div>-->
-<!--    <p>fdjks</p>-->
-<!--    <p>fdjks</p>-->
-<!--    <p>fdjks</p>-->
-<!--    <p>fdjks</p>-->
-<!--</div>-->

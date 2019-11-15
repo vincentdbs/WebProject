@@ -40,7 +40,6 @@
 .item-div{
     flex: 1;
 }
-
 @media (min-device-width: 0px) and (max-device-width: 480px) {
     .table-user{
         width: 90%;
