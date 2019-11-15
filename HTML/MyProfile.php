@@ -36,7 +36,7 @@
     </div>
 
     <div class="info">
-        <div class="category">
+        <div class="category" id="user_info">
             <form action="../PHP/EditPersonnalInfo.php" method="post">
                 <h2>Personal information</h2>
                 <label>Last name:</label>
@@ -49,7 +49,7 @@
             </form>
         </div>
 
-        <div class="category">
+        <div class="category" id="user_pwd">
             <h2>Password</h2>
             <p class="little">You want to change your password, nothing more simple. Enter your old password then type your new one and confirm it. That's it !</p>
             <form action="../PHP/EditPassword.php" method="post">
@@ -65,7 +65,7 @@
 
         <?php
             if($_SESSION['user_role'] == 'user'){
-                echo " <div class=\"category\">
+                echo " <div class='category' id='user_history'>
                          <h2>History</h2>";
                 include "../PHP/RetrieveUserRentedCar.php";
                 echo "</div>";
