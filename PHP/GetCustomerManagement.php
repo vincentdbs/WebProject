@@ -42,7 +42,7 @@
                 echo "<tr class='item-tr' style='display: none'>
                 <td colspan='6'>
                     <div class='item'>
-                        <img src='../Image/fiat500.jpg' class='item-image'>
+                        <img src='" . $rows_car['car_photo'] . "'class='item-image'>
                         <div class='item-div'>
                             <table>
                                 <tr>

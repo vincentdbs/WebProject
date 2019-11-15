@@ -18,7 +18,7 @@
         else{
             $rows_car = mysqli_fetch_array($result_car);
             echo "<div class=\"item\">
-            <img src=\"../Image/fiat500.jpg\" class=\"item-image\">
+            <img src='" . $rows_car['car_photo'] ."' class=\"item-image\">
             <div class=\"item-div\">
                 <table>
                     <tr>

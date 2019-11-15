@@ -11,7 +11,7 @@
         echo "<div class=\"card-column\">";
         echo "<div class=\"card-content\">";
         echo "<div class=\"content\">";
-        echo "<img src=\"../Image/photography-of-blue-wagon-audi-1035108.jpg\" class=\"card-car-image\">";
+        echo "<img src='" . $rows['car_photo'] . "' class=\"card-car-image\">";
         echo "<table>";
         echo "<tr>";
         echo "<td><p>Seats:</p></td>";
