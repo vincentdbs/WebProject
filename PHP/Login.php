@@ -29,11 +29,13 @@
     if($_SESSION['user_role']==="admin")
     {
         $name = $_SESSION['user_first_name'] . " " . $_SESSION['user_last_name'];
-        echo "<script>window.location.href='../HTML/MyProfile.php';</script>";
+        //echo "<script>window.location.href='../HTML/MyProfile.php';</script>";
+        header("location : MyProfile.php");
     }
     else if($_SESSION['user_role']==="user")
     {
         echo "window.location.href='../HTML/HomePage.php';</script>";
+        header("location : HomePage.php");
     }
 ?>
 

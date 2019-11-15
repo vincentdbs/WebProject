@@ -50,9 +50,9 @@
                                     <td>" . $rows_car['car_id'] . "</td>
                                 </tr>
                                 <tr>
-                                    <td>Nb seats: </td>
+                                    <td>Number of seats: </td> 
                                     <td>" .  $rows_car['car_nb_seats'] ."</td>
-                                    <td>Nb doors: </td>
+                                    <td>Number of doors: </td>
                                     <td>" . $rows_car['car_nb_doors'] . "</td>
                                 </tr>
                                 <tr>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                 </td>
-            </tr>";
+            </tr>"; //TODO remplacer number of doors and seat par des favicon
             }
         }
     }

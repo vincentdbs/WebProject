@@ -27,8 +27,12 @@
     <div class="side-bar">
         <i class="material-icons">edit</i>
         <i class="material-icons">lock</i>
-        <i class="material-icons">history</i>
-        <i class="material-icons">timer</i>
+        <?php
+            if($_SESSION['user_role'] == 'user'){
+                echo "<i class=\"material-icons\">history</i>";
+            }
+        ?>
+
     </div>
 
     <div class="info">
@@ -62,11 +66,11 @@
         <?php
             if($_SESSION['user_role'] == 'user'){
                 echo " <div class=\"category\">
-                         <h2>History</h2>
-                       </div>";
+                         <h2>History</h2>";
+                include "../PHP/RetrieveUserRentedCar.php";
+                echo "</div>";
             }
         ?>
-
     </div>
 
     <script src="../JS/navbar.js"></script>
