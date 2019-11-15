@@ -1,13 +1,11 @@
 function displayDiv(icon) {
-    let parentTr =  icon.parentNode.parentNode; //get parent tr
-    let sibling = parentTr.nextSibling;
-
-    if(sibling.style.display === "table-row"){
-        sibling.style.display = "none";
+    let allTr = document.getElementsByClassName("item-tr");
+    for (let i = 0 ; i < allTr.length ; i++){
+        if (allTr.item(i).style.display === "table-row"){
+            allTr.item(i).style.display = "none";
+        }
+        else{
+            allTr.item(i).style.display = "table-row";
+        }
     }
-    else{
-        // sibling.style.columnSpan = "6";
-        sibling.style.display = "table-row";
-    }
-
 }

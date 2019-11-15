@@ -23,13 +23,14 @@
         }
         else{
             echo "<td>Yes</td>";
-            echo "<td><i class='material-icons' onclick='displayDiv(this)'>keyboard_arrow_down</img></td>";
+            echo "<td><i class='material-icons' onclick='displayDiv()'>keyboard_arrow_down</img></td>";
         }
 
         echo "</tr>";
 //        echo "<tr><td><div style='height: 100px'><p>dfsmjkfds dsml fklsf jsdj flksdf </p> </div></td></tr>";
 
         while ($rows_booking = mysqli_fetch_array($result_booking)){
+            echo "1";
             $sql_car = "SELECT * FROM car WHERE car_id=" . $rows_booking['booking_car_id'];
             $result_car = mysqli_query($con, $sql_car);
             if (mysqli_num_rows($result_booking) <= 0){
@@ -37,7 +38,7 @@
             }
             else{
                 $rows_car = mysqli_fetch_array($result_car);
-                echo "<tr style='display: none'>
+                echo "<tr class='item-tr' style='display: none'>
                 <td colspan='6'>
                     <div class='item'>
                         <img src='../Image/fiat500.jpg' class='item-image'>
