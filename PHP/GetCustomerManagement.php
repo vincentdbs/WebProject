@@ -1,6 +1,7 @@
 <?php
     include "Db_connexion.php";
 
+    //retrieve user
     $sql_user = 'SELECT * FROM user WHERE user_role="user"';
     $result_user = mysqli_query($con, $sql_user);
     if (mysqli_num_rows($result_user) <= 0){
@@ -15,6 +16,7 @@
         echo "<td>" . $rows_user['user_last_name'] . "</td>";
         echo "<td>" . $rows_user['user_email'] . "</td>";
 
+        //retrieve rented item by the user
         $sql_booking = 'SELECT * FROM booking where booking_user_id=' . $rows_user['user_id'];
         $result_booking = mysqli_query($con, $sql_booking);
         if (mysqli_num_rows($result_booking) <= 0){
@@ -23,14 +25,13 @@
         }
         else{
             echo "<td>Yes</td>";
-            echo "<td><i class='material-icons' onclick='displayDiv()'>keyboard_arrow_down</img></td>";
+            echo "<td><i class='material-icons' onclick='displayDiv()'>keyboard_arrow_down</img></td>"; //display on click
         }
 
         echo "</tr>";
-//        echo "<tr><td><div style='height: 100px'><p>dfsmjkfds dsml fklsf jsdj flksdf </p> </div></td></tr>";
 
+        //display all rented item
         while ($rows_booking = mysqli_fetch_array($result_booking)){
-            echo "1";
             $sql_car = "SELECT * FROM car WHERE car_id=" . $rows_booking['booking_car_id'];
             $result_car = mysqli_query($con, $sql_car);
             if (mysqli_num_rows($result_booking) <= 0){

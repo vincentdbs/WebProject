@@ -36,3 +36,5 @@
         echo "window.location.href='../HTML/HomePage.php';</script>";
     }
 ?>
+
+<!-- TODO crypter les mots de passe -->

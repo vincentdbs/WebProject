@@ -6,11 +6,18 @@
                 echo "<li><a href=\"ConnexionPage.php\">Login</a></li>";
             }
             else{
-                echo "<li><a href=\"../PHP/Logout.php\">Logout</a></li>";
-                echo "<li><a href=\"MyProfile.php\">Profile</a></li>";
+                echo "<li><a href='../PHP/Logout.php'>Logout</a></li>";
+                echo "<li><a href='MyProfile.php'>Profile</a></li>";
             }
         ?>
-        <li><a href="Booking.php">Rent</a></li>
+        <?php
+            if (isset($_SESSION['user_role']) && $_SESSION['user_role'] == "admin"){
+                echo "<li><a href='../HTML/CustomerManagement.php'>Management</a></li>";
+            }
+            else{
+                echo "<li><a href='Booking.php'>Rent</a></li>";
+            }
+        ?>
         <li><a href="HomePage.php">Home</a></li>
     </ol>
     <a class="icon" onclick="displayMenu()"><img src="../Icon/burger_menu.png" id="burger_menu"></a>
