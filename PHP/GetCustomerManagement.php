@@ -30,9 +30,31 @@
 //        echo "<tr><td><div style='height: 100px'><p>dfsmjkfds dsml fklsf jsdj flksdf </p> </div></td></tr>";
 
         while ($rows = mysqli_fetch_array($result_bis)){
-            echo "<tr style='display: none'><td colspan='6'><div>";
-            echo "<p>dsfsdf</p>";
-            echo "</div></td></tr>";
+            echo "<tr style='display: none'>
+                <td colspan='6'>
+                    <div class='item'>
+                        <img src='../Image/fiat500.jpg' class='item-image'>
+                        <div class='item-div'>
+                            <table>
+                                <tr>
+                                    <td>Car id</td>
+                                </tr>
+                                <tr>
+                                    <td>Car nb seats</td>
+                                    <td>Car nb doors</td>
+                                </tr>
+                                <tr>
+                                    <td>Pickup </td>
+                                    <td>Return</td>
+                                </tr>
+                                <tr>
+                                    <td>Price </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </td>
+            </tr>";
         }
     }
 ?>

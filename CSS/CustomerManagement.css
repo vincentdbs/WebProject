@@ -3,24 +3,42 @@
     border-collapse: collapse;
 }
 
-thead tr{
+.table-user thead tr{
     border: none;
     color: black;
     font-weight: bold;
 }
 
-th{
+.table-user th{
     font-family: Montserrat;
     background-color: #F8FF00;
     text-align: left;
     padding: 12px;
 }
 
-td{
+.table-user td{
     background-color: white;
     font-family: Nunito;
     padding: 12px;
     height: 20px;
+}
+
+.item{
+    width: 100%;
+    margin-top: 4px;
+    border-top: #f5f5f5 solid 4px;
+    border-bottom: #f5f5f5 solid 4px;
+}
+
+.item-image{
+    float: left;
+    max-width: 300px;
+    height: auto;
+    padding-top: 12px;
+}
+
+.item-div{
+    flex: 1;
 }
 
 @media (min-device-width: 0px) and (max-device-width: 480px) {
