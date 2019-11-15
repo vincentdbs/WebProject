@@ -1,22 +1,3 @@
-.center h2{
-    color: #F8FF00;
-    margin: 0 auto;
-    padding-bottom: 16px;
-}
-
-#button_selection{
-    height: 100%;
-}
-
-/*Filtre */
-
-.selection{
-    margin: 8px 32px;
-}
-
-.selection select{
-    margin: 8px 0;
-}
 
 /*Car*/
 .card-column {
@@ -50,45 +31,8 @@
     height: 250px;
     margin: 0 auto;
 }
-/*Fix affichage des lignes*/
-
-/*TODO le mettre dans le Button.css*/
-.button-car-booking{
-    width: 100%;
-    height: 30px;
-    background-color: #F8FF00;
-    border: none;
-
-}
-
-.link-booking-summary{
-    border: none;
-    background-color: #F8FF00;
-    width: 100%;
-    height: 35px;
-    margin: 0 auto;
-    padding: 4px;
-    font-size: 20px;
-    text-align: center;
-}
-
-
 
 @media (min-device-width: 0px) and (max-device-width: 480px) {
-    /*Form*/
-    .center{
-        margin: 16px auto;
-    }
-
-    .form-booking{
-        width: 80%;
-    }
-
-
-    .selection select{
-        margin: 4px 0;
-    }
-
     /*Card car*/
     .card-column {
         float: none;
@@ -104,12 +48,6 @@
 }
 
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
-    .center{
-        margin: 24px auto;
-    }
-
-    /*Card car*/
-
     .card-column{
         width: 50%;
     }
@@ -121,12 +59,5 @@
 }
 
 @media (min-device-width: 1025px) {
-    .center{
-        margin: 32px auto;
-    }
 
-    .link-booking-summary:hover{
-        font-weight: bold;
-        color: black;
-    }
 }

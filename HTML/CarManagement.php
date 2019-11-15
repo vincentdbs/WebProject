@@ -1,8 +1,9 @@
 <?php
-    session_start();
-    if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] == 'user'){
-        header('location: HomePage.php');
-    }
+session_start();
+if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] == 'user'){
+    header('location: HomePage.php');
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
@@ -13,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/Header.css">
     <link rel="stylesheet" href="../CSS/All.css">
-    <link rel="stylesheet" href="../CSS/CustomerManagement.css">
+    <link rel="stylesheet" href="../CSS/CarManagement.css">
     <link rel="stylesheet" href="../CSS/Text.css">
     <link rel="stylesheet" href="../CSS/Button.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -26,24 +27,13 @@ include("Navbar.php");
 ?>
 
 <main>
-    <div>
-        <table class="table-user">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
-                    <th>On loan ?</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <?php include("../PHP/GetCustomerManagement.php")?>
-        </table>
+    <div class="result">
+        <?php
+        include_once "../PHP/GetCarManagement.php";
+        ?>
     </div>
 </main>
 
 <script src="../JS/navbar.js"></script>
-<script src="../JS/displayItemCustomerManagement.js"></script>
 </body>
 </html>
