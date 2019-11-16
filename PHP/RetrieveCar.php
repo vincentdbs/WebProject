@@ -57,7 +57,7 @@
             echo "<td>" . $rows['car_price'] . "/day</td>";
             echo "</tr>";
             echo "</table>";
-            echo "<a class='link-booking-summary' href='BookingSummary.php?car_id=" .  $rows['car_id'] . "&pickup_date=" . $_GET['pickup_date'] . "&return_date=" . $_GET['return_date'] . "&car_nb_seats=" . $rows['car_nb_seats'] . "&car_nb_doors=" . $rows['car_nb_doors'] ."'>Book</a>";
+            echo "<a class='link-booking-summary' href='BookingSummary.php?car_id=" .  $rows['car_id'] . "&pickup_date=" . $_GET['pickup_date'] . "&return_date=" . $_GET['return_date'] . "&car_nb_seats=" . $rows['car_nb_seats'] . "&car_nb_doors=" . $rows['car_nb_doors'] . "&car_name=" . $rows['car_name'] ."'>Book</a>";
             echo "</div> </div> </div>";
         }
         echo "</div>";

@@ -29,7 +29,7 @@ $_SESSION['car_id'] = $_GET['car_id'];
 
     <main>
         <div class="summary-car">
-            <h2> NOM DE LA VOITURE </h2>
+            <h2> <?php echo $_GET['car_name']?> </h2>
 
             <div class="div-flex">
                 <div class="car-info">
