@@ -35,15 +35,15 @@ $_SESSION['car_id'] = $_GET['car_id'];
                 <div class="car-info">
                     <table style="width:100%">
                         <tr>
-                            <td class="test"><i class="material-icons">perm_identity</i></td>
+                            <td><img src="../Icon/car_seats.png" class="icon_car"></td>
                             <td><?php echo $_GET['car_nb_seats'] ?></td>
                         </tr>
                         <tr>
-                            <td><i class="material-icons">local_gas_station</i></td>
+                            <td><img src="../Icon/car_doors.png" class="icon_car"></td>
                             <td><?php echo $_GET['car_nb_doors'] ?></td>
                         </tr>
                         <tr>
-                            <td><i class="material-icons">local_gas_station</i></td>
+                            <td><img src="../Icon/fuel.png" class="icon_car"></td>
                             <td>Max fuel</td>
                         </tr>
                     </table>
@@ -51,15 +51,15 @@ $_SESSION['car_id'] = $_GET['car_id'];
                 <div class="car-included">
                     <table style="width:100%">
                         <tr>
-                            <td><i class="material-icons">done</i></td>
+                            <td><img src="../Icon/done.png" class="icon_car"></td>
                             <td>Free cancellation</td>
                         </tr>
                         <tr>
-                            <td><i class="material-icons">done</i></td>
+                            <td><img src="../Icon/done.png" class="icon_car"></td>
                             <td>Insurance</td>
                         </tr>
                         <tr>
-                            <td><i class="material-icons">done</i></td>
+                            <td><img src="../Icon/done.png" class="icon_car"></td>
                             <td>Theft protection</td>
                         </tr>
                     </table>

@@ -19,9 +19,6 @@ body{
     flex-wrap: wrap;
 }
 
-.div-flex > div{
-    flex: 1;
-}
 
 td{
     padding: 6px 6px 6px 12px;
@@ -71,6 +68,22 @@ form input{
     td{
         padding: 4px 0;
     }
+
+    .car-included{
+        flex: 1;
+    }
+
+    .car-info{
+        flex: 1;
+    }
+
+    .icon_car{
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        border-radius: 100%;
+        padding: 4px;
+    }
 }
 
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
@@ -103,6 +116,22 @@ form input{
     td{
         padding: 6px 6px 6px 6px;
     }
+
+    .car-included{
+        flex: 1;
+    }
+
+    .car-info{
+        flex: 1;
+    }
+
+    .icon_car{
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 100%;
+        padding: 4px;
+    }
 }
 
 @media (min-device-width: 1025px) {
@@ -114,5 +143,14 @@ form input{
 
     .summary-driver-table{
         width: 50%;
+    }
+
+    .div-flex > div{
+        flex: 1;
+    }
+
+    .icon_car{
+        width: 25px;
+        height: 25px;
     }
 }
