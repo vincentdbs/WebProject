@@ -75,13 +75,16 @@
     padding-left: 8px;
 }
 
-.car-container table{
-    height: 100px;
+.car-container td{
+    padding: 0 4px;
 }
 
-.car-container td{
-    padding: 8px;
+
+
+.icon{
+    margin-top: 4px;
 }
+
 .brand{
     padding: 0 0 0 8px ;
     color: #9e9e9e;
@@ -110,11 +113,29 @@
         margin: 24px 0;
     }
 
+    .icon{
+        width: 16px;
+        height: 16px;
+    }
+
 }
 
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
     .card-column{
         width: 45%;
+    }
+
+    .car-container{
+        width: 90%;
+    }
+
+    .card-car-image{
+        height: 200px;
+    }
+
+    .icon{
+        width: 20px;
+        height: 20px;
     }
 
 }
@@ -127,5 +148,10 @@
     .link-booking-summary:hover{
         font-weight: bold;
         color: black;
+    }
+
+    .icon{
+        width: 25px;
+        height: 25px;
     }
 }

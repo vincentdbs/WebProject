@@ -49,12 +49,12 @@
             echo "<p class='little brand'>" . $rows['car_brand'] . "</p>";
             echo "<table>";
             echo "<tr>";
-            echo "<td>Seats:</td>";
+            echo "<td><img src='../Icon/car_seats.png' class='icon'> </td>";
             echo "<td>" . $rows['car_nb_seats'] . "</td>";
-            echo "<td><p>Doors:</p></td>";
+            echo "<td><img src='../Icon/car_doors.png' class='icon'> </td>";
             echo "<td>" . $rows['car_nb_doors'] . "</td>";
-            echo "<td><p>Price:</p></td>";
-            echo "<td>" . $rows['car_price'] . "</td>";
+            echo "<td><img src='../Icon/coin.png' class='icon'> </td>";
+            echo "<td>" . $rows['car_price'] . "/day</td>";
             echo "</tr>";
             echo "</table>";
             echo "<a class='link-booking-summary' href='BookingSummary.php?car_id=" .  $rows['car_id'] . "&pickup_date=" . $_GET['pickup_date'] . "&return_date=" . $_GET['return_date'] . "&car_nb_seats=" . $rows['car_nb_seats'] . "&car_nb_doors=" . $rows['car_nb_doors'] ."'>Book</a>";
