@@ -1,30 +1,6 @@
-.center h2{
-    color: #F8FF00;
-    margin: 0 auto;
-    padding-bottom: 16px;
-}
-
-#button_selection{
-    height: 100%;
-}
-
-/*Filtre */
-
-.selection{
-    margin: 8px 32px;
-}
-
-.selection select{
-    margin: 8px 0;
-}
-
 .car-container{
     width: 80%;
     margin: 0 auto;
-}
-
-.car-container > *{
-    box-sizing: content-box; /*broke page layout if not here because all element are border-box in all.css*/
 }
 
 .card-column {
@@ -70,7 +46,6 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-
 
 
 @media (min-device-width: 0px) and (max-device-width: 480px) {

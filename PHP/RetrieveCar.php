@@ -39,6 +39,7 @@
             die("<p> Sorry, we do not find anything that correspond to your research ! </p>");
         }
 
+        echo "<div class=\"car-container\">";
         while($rows = mysqli_fetch_array($result)){
             echo "<div class=\"card-column\">";
             echo "<div class=\"card-content\">";
@@ -57,6 +58,7 @@
             echo "<a class='link-booking-summary' href='BookingSummary.php?car_id=" .  $rows['car_id'] . "&pickup_date=" . $_GET['pickup_date'] . "&return_date=" . $_GET['return_date'] . "&car_nb_seats=" . $rows['car_nb_seats'] . "&car_nb_doors=" . $rows['car_nb_doors'] ."'>Book</a>";
             echo "</div> </div> </div>";
         }
+        echo "</div>";
     }
 
     function getActualURL(){
