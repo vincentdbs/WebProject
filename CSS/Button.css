@@ -15,6 +15,7 @@ button{
 }
 
 .input-login, .input-account{
+    width: 50%;
     border: none;
     border-bottom: #C8C8C8 solid 2px;
     outline: none;
