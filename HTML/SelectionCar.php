@@ -34,7 +34,6 @@
     ?>
 
     <main>
-        <!--            TODO completer avec le file php-->
         <div class="center">
             <form action="" method="post" class="form-booking">
                 <div>
