@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+.car-container > *{
+    box-sizing: content-box;
+}
+
 .card-column {
     display: inline-block;
     width: 30%;

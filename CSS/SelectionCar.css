@@ -9,7 +9,6 @@
 }
 
 /*Filtre */
-
 .selection{
     margin: 8px 32px;
 }
@@ -18,6 +17,7 @@
     margin: 8px 0;
 }
 
+/*Card*/
 .car-container{
     width: 80%;
     margin: 0 auto;
@@ -29,7 +29,7 @@
 
 .card-column {
     display: inline-block;
-    width: 30%;
+    width: 31%;
     padding: 0 10px;
     height: 50%;
     margin: 12px 0;
@@ -71,7 +71,21 @@
     border-bottom-right-radius: 20px;
 }
 
+.car-container h3{
+    padding-left: 8px;
+}
 
+.car-container table{
+    height: 100px;
+}
+
+.car-container td{
+    padding: 8px;
+}
+.brand{
+    padding: 0 0 0 8px ;
+    color: #9e9e9e;
+}
 
 @media (min-device-width: 0px) and (max-device-width: 480px) {
     /*Form*/
