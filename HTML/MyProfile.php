@@ -25,11 +25,12 @@
     ?>
 
     <div class="side-bar">
-        <i class="material-icons">edit</i>
-        <i class="material-icons">lock</i>
+        <a href="#user_info"><img class="icon_profile" src="../Icon/edit.png"></a>
+        <a href="#user_pwd"><img class="icon_profile" src="../Icon/lock.png"></a>
+
         <?php
             if($_SESSION['user_role'] == 'user'){
-                echo "<i class=\"material-icons\">history</i>";
+                echo "<a href='#user_history'><img class=\"icon_profile\" src=\"../Icon/history.png\"></a>";
             }
         ?>
 

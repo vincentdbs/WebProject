@@ -2,15 +2,15 @@
     position: fixed;
     top: 40%;
     left: 5%;
-
 }
 
-.side-bar i{
+.side-bar a{
     display: block;
     margin-top: 24px;
+    padding: 0;
 }
 
-.side-bar i:hover{
+.side-bar img:hover{
     cursor: pointer;
 }
 
@@ -29,8 +29,8 @@
 input,  label{
     display: block;
     margin: 6px 0;
-
 }
+
 
 .item{
     width: 100%;
@@ -61,16 +61,35 @@ input,  label{
     .category{
         padding: 20px;
     }
+
+    .icon_profile{
+        width: 16px;
+        height: 16px;
+    }
+
+    .side-bar{
+        left: 3%;
+    }
 }
 
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
     .category{
         padding: 26px;
     }
+
+    .icon_profile{
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media (min-device-width: 1025px) {
     .category{
         padding: 32px;
+    }
+
+    .icon_profile{
+        width: 25px;
+        height: 25px;
     }
 }

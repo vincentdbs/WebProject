@@ -139,6 +139,7 @@ form input{
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url("../Image/photography-of-blue-wagon-audi-1035108.jpg");
+        max-width:  254px;
     }
 
     .summary-driver-table{
