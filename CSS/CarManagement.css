@@ -1,63 +1,130 @@
+/*Card*/
+.result{
+    width: 80%;
+    margin: 0 auto;
+}
 
-/*Car*/
+.result> *{
+    box-sizing: content-box; /*broke page layout if not here because all element are border-box in all.css*/
+}
+
 .card-column {
-    float: left;
-    width: 33%;
+    display: inline-block;
+    width: 31%;
     padding: 0 10px;
     height: 50%;
     margin: 12px 0;
 }
 
-.result:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .card-content {
     box-shadow: -3px 3px 10px 1px rgba(153,153,153,1);
     margin: 12px 6px 6px;
-    background: white url("../SVG/wave.svg") no-repeat;
-}
-
-.card-car{
-    width: 22%;
-    height: 33%;
+    border-radius: 20px;
+    width: 100%;
 }
 
 .card-car-image{
     display: block;
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    object-fit: cover;
+}
+
+.content h3{
+    padding-left: 8px;
+}
+
+.content table{
     margin: 0 auto;
 }
 
+.content td{
+    padding: 0 4px;
+}
+
+.icon_car{
+    margin-top: 4px;
+}
+
+.brand{
+    padding: 0 0 0 8px ;
+    color: #9e9e9e;
+    display: inline-block;
+}
+
+#bin{
+    display: inline-block;
+    float: right;
+    margin-right: 8px;
+}
+
 @media (min-device-width: 0px) and (max-device-width: 480px) {
+    /*Form*/
+    .center{
+        margin: 16px auto;
+    }
+
+    .form-booking{
+        width: 80%;
+    }
+
+    .selection select{
+        margin: 4px 0;
+    }
+
     /*Card car*/
     .card-column {
-        float: none;
-        width: 90%;
+        width: 100%;
         display: block;
-        margin: 24px auto;
+        padding: 0;
+        margin: 24px 0;
     }
 
     .card-car-image{
-        width: 150px;
-        height: 150px;
+        height: 200px;
     }
+
+    .icon_car{
+        width: 16px;
+        height: 16px;
+    }
+
 }
 
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
     .card-column{
-        width: 50%;
+        width: 45%;
+    }
+
+    .car-container{
+        width: 90%;
     }
 
     .card-car-image{
-        width: 200px;
         height: 200px;
     }
+
+    .icon_car{
+        width: 20px;
+        height: 20px;
+    }
+
 }
 
 @media (min-device-width: 1025px) {
+    .center{
+        margin: 32px auto;
+    }
 
+    .link-booking-summary:hover{
+        font-weight: bold;
+        color: black;
+    }
+
+    .icon_car{
+        width: 25px;
+        height: 25px;
+    }
 }

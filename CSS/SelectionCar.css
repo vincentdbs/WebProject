@@ -75,6 +75,11 @@
     padding-left: 8px;
 }
 
+.car-container table{
+    margin: 0 auto;
+}
+
+
 .car-container td{
     padding: 0 4px;
 }
@@ -116,6 +121,10 @@
     .icon{
         width: 16px;
         height: 16px;
+    }
+
+    .card-car-image{
+        height: 200px;
     }
 
 }
