@@ -40,5 +40,5 @@
     }
 
     mysqli_close($con);
-    include "../HTML/AddCar.php";
+    echo ("<script>window.history.go(-1);</script>");
 ?>
