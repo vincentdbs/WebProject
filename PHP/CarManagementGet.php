@@ -14,7 +14,7 @@
         echo "<img src='" . $rows['car_photo'] . "' class=\"card-car-image\">";
         echo "<h3>" . $rows['car_name'] . "</h3>";
         echo "<p class='little brand'>" . $rows['car_brand'] . "</p>";
-        echo "<img src='../Icon/bin.png' class=\"icon_car\" id='bin'>";
+        echo "<img src='../Icon/bin.png' class=\"icon_car\" id='bin' onclick='callPhp(" . $rows['car_id'] .")'>";
         echo "<table>";
         echo "<tr>";
         echo "<td><img src='../Icon/car_seats.png' class='icon_car'> </td>";

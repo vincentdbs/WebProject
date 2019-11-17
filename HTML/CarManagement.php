@@ -32,11 +32,12 @@ include("Navbar.php");
 <main>
     <div class="result">
         <?php
-        include_once "../PHP/GetCarManagement.php";
+        include_once "../PHP/CarManagementGet.php";
         ?>
     </div>
 </main>
 
 <script src="../JS/navbar.js"></script>
+<script src="../JS/deteleCarOnClick.js"></script>
 </body>
 </html>

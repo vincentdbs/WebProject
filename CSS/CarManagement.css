@@ -60,6 +60,10 @@
     margin-right: 8px;
 }
 
+#bin:hover{
+    cursor: pointer;
+}
+
 @media (min-device-width: 0px) and (max-device-width: 480px) {
     /*Form*/
     .center{
