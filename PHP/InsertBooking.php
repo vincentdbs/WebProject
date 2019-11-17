@@ -18,5 +18,7 @@
         die("<script>alert('Your booking has not been completed. Try again later !')");
     }
 
+    header("location: ../HTML/HomePage.php");
+
     mysqli_close($con);
 ?>

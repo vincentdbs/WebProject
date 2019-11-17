@@ -22,23 +22,24 @@
             <div class=\"item-div\">
                 <table>
                     <tr>
-                        <td>#</td>
-                        <td>" . $rows_car['car_id'] . "</td>
+                        <td><img src='../Icon/car.png' class='icon_profile'></td>
+                        <td>" . $rows_car['car_name'] . "</td>
+                        <td>" . $rows_car['car_brand'] . "</td>
                     </tr>
                     <tr>
-                        <td>Nb seats: </td>
+                        <td><img src='../Icon/car_seats.png' class='icon_profile'></td>
                         <td>" .  $rows_car['car_nb_seats'] ."</td>
-                        <td>Nb doors: </td>
+                        <td><img src='../Icon/car_doors.png' class='icon_profile'></td>
                         <td>" . $rows_car['car_nb_doors'] . "</td>
                     </tr>
                     <tr>
-                        <td>Pickup date: </td>
+                        <td><img src='../Icon/calendar.png' class='icon_profile'></td>
                         <td>" . $rows_booking['booking_pickup_date'] . "</td>
-                        <td>Return date: </td>
+                        <td><img src='../Icon/back-in-time.png' class='icon_profile'></td>
                         <td>" . $rows_booking['booking_return_date'] . "</td>
                     </tr>
                     <tr>
-                        <td>Price (RM): </td>
+                        <td><img src='../Icon/coin.png' class='icon_profile'></td>
                         <td>" . $rows_booking['booking_price'] . "</td>
                     </tr>
                 </table>
