@@ -15,5 +15,5 @@
     }
 
     mysqli_close($con);
-    include '../HTML/HomePage.php';?>
+    header("location: ../HTML/HomePage.php");
 ?>

@@ -60,9 +60,11 @@
         return_date = return_date.value;
         let url = "SelectionCar.php?car_type=" + selectedOption + "&pickup_date=" + pickup_date + "&return_date=" + return_date;
 
+        
         if ((return_date === "") || (pickup_date === "")){
             alert("You must select pickup date and return date.")
         }
+        else if(return_date <= )
         else{
             let link = document.getElementById("button_booking");
             link.setAttribute("href", url);
