@@ -64,6 +64,9 @@
         if ((return_date === "") || (pickup_date === "")){
             alert("You must select pickup date and return date.")
         }
+        else if(pickup_date > return_date){
+            alert("Return date can not be inferior to pickup date.")
+        }
         else{
             let link = document.getElementById("button_booking");
             link.setAttribute("href", url);
