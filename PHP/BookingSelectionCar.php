@@ -30,10 +30,11 @@
         $nb_day = date_diff($date1,$date2);
         $nb_day = $nb_day->format("%a");
         $nb_day = number_format($nb_day) ;
+        $price = $_GET['car_price'];
 
-        //todo fix car nb day = nb day et pas price
-        $_SESSION['booking_price'] = $nb_day;
-        return $nb_day;
+        $price *= $nb_day;
+        $_SESSION['booking_price'] = $price;
+        return $price;
     }
 
     function getCarInfo(){
