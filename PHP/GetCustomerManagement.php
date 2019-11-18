@@ -25,7 +25,7 @@
         }
         else{
             echo "<td>Yes</td>";
-            echo "<td><i class='material-icons' onclick='displayDiv()'>keyboard_arrow_down</img></td>"; //display on click
+            echo "<td><i class='material-icons' onclick='displayDiv(this)'>keyboard_arrow_down</img></td>"; //display on click
         }
 
         echo "</tr>";

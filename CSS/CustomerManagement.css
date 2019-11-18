@@ -1,11 +1,5 @@
 /*TODO faire affichage responsive*/
 
-/*To display scroll bar*/
-.table-container{
-    width: 100%;
-    overflow: scroll;
-}
-
 .table-user{
     overflow: hidden; /*hide content on overflow*/
     margin: 32px auto;
@@ -58,12 +52,27 @@ i:hover{
 @media (min-device-width: 0px) and (max-device-width: 480px) {
     .table-user{
         width: 90%;
+        overflow: hidden;
     }
+
+    /*To display scroll bar*/
+    .table-container{
+        width: 100%;
+        overflow: scroll;
+    }
+
 }
 
 @media (min-device-width: 481px) and (max-device-width: 1024px) {
     .table-user{
         width: 80%;
+        overflow: hidden;
+    }
+
+    /*To display scroll bar*/
+    .table-container{
+        width: 100%;
+        overflow: scroll;
     }
 }
 
