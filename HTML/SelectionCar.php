@@ -34,22 +34,6 @@
     ?>
 
     <main>
-        <div class="center">
-            <form action="" method="post" class="form-booking">
-                <div>
-                    <label>Pickup date:</label>
-                    <input type="date" value="<?php echo $_GET['pickup_date']; ?>">
-
-                </div>
-                <div>
-                    <label>Return date:</label>
-                    <input type="date" value="<?php echo $_GET['return_date']; ?>">
-                </div>
-                <div>
-                    <input type="submit" value="Search" class="button-booking" id="button_selection">
-                </div>
-            </form>
-        </div>
         <div class="selection">
             <h2>Choose your car :</h2>
             <form action="<?php  include_once "../PHP/RetrieveCar.php"; getActualURL();?>" method="post">

@@ -33,7 +33,6 @@
                 $sql = $sql . " WHERE car_type ='" .  $_GET['car_type'] . "'";
             }
         }
-        //TODO check pourquoi $con en rouge mais pas de crash si dans la fonction
         $result = mysqli_query($con, $sql);
         if (mysqli_num_rows($result) <= 0){
             die("<p> Sorry, we do not find anything that correspond to your research ! </p>");
@@ -77,6 +76,22 @@
 
         echo $link;
     }
+
+//    function isCarAvaible($id){
+//        include("Db_connexion.php");
+//
+//        $sql = "SELECT * FROM booking WHERE booking_car_id=" . $id . '&& booking_pickup_date <=' . $_GET['booking_pickup_date'];
+//        $result = mysqli_query($con, $sql);
+//
+//        if (mysqli_num_rows($result) <= 0){
+//            return true;
+//        }
+//        else{
+//            while ($rows = mysqli_fetch_array($result)){
+//                if ($rows['booking_pickup_date'] <= $_SESSION[''])
+//            }
+//        }
+//    }
 ?>
 
 
