@@ -43,10 +43,14 @@
     flex: 1;
 }
 
+.icon_table{
+    padding-top: 2px;
+    width: 18px;
+    height: 18px;
+}
 
-i:hover{
+.icon_table:hover{
     cursor: pointer;
-    color: #9e9e9e;
 }
 
 @media (min-device-width: 0px) and (max-device-width: 480px) {

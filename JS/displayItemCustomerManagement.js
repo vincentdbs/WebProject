@@ -13,4 +13,12 @@ function displayDiv(icon) {
             sibling[i].style.display = "table-row";
         }
     }
+
+    console.log(icon.src);
+    if(icon.src === "http://localhost/Projet/Icon/down_arrow.png"){
+        icon.src = "http://localhost/Projet/Icon/up_arrow.png";
+    }
+    else {
+        icon.src = "http://localhost/Projet/Icon/down_arrow.png";
+    }
 }
