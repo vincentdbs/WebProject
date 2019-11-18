@@ -26,7 +26,7 @@ include("Navbar.php");
 ?>
 
 <main>
-    <div>
+    <div class="table-container">
         <table class="table-user">
             <thead>
                 <tr>

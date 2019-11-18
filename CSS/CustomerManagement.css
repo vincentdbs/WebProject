@@ -1,6 +1,13 @@
 /*TODO faire affichage responsive*/
 
+/*To display scroll bar*/
+.table-container{
+    width: 100%;
+    overflow: scroll;
+}
+
 .table-user{
+    overflow: hidden; /*hide content on overflow*/
     margin: 32px auto;
     border-collapse: collapse;
 }
