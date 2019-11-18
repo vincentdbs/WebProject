@@ -40,24 +40,26 @@
 
         echo "<div class=\"car-container\">";
         while($rows = mysqli_fetch_array($result)){
-            echo "<div class=\"card-column\">";
-            echo "<div class=\"card-content\">";
-            echo "<div class=\"content\">";
-            echo "<img src='" . $rows['car_photo'] . "' class=\"card-car-image\">";
-            echo "<h3>" . $rows['car_name'] . "</h3>";
-            echo "<p class='little brand'>" . $rows['car_brand'] . "</p>";
-            echo "<table>";
-            echo "<tr>";
-            echo "<td><img src='../Icon/car_seats.png' class='icon'> </td>";
-            echo "<td>" . $rows['car_nb_seats'] . "</td>";
-            echo "<td><img src='../Icon/car_doors.png' class='icon'> </td>";
-            echo "<td>" . $rows['car_nb_doors'] . "</td>";
-            echo "<td><img src='../Icon/coin.png' class='icon'> </td>";
-            echo "<td>" . $rows['car_price'] . "/day</td>";
-            echo "</tr>";
-            echo "</table>";
-            echo "<a class='link-booking-summary' href='BookingSummary.php?car_id=" .  $rows['car_id'] . "&pickup_date=" . $_GET['pickup_date'] . "&return_date=" . $_GET['return_date'] . "&car_nb_seats=" . $rows['car_nb_seats'] . "&car_nb_doors=" . $rows['car_nb_doors'] . "&car_name=" . $rows['car_name'] . "&car_price=" . $rows['car_price'] ."'>Book</a>";
-            echo "</div> </div> </div>";
+            if(isCarAvaible($rows['car_id'], $rows['car_stocks'])){
+                echo "<div class=\"card-column\">";
+                echo "<div class=\"card-content\">";
+                echo "<div class=\"content\">";
+                echo "<img src='" . $rows['car_photo'] . "' class=\"card-car-image\">";
+                echo "<h3>" . $rows['car_name'] . "</h3>";
+                echo "<p class='little brand'>" . $rows['car_brand'] . "</p>";
+                echo "<table>";
+                echo "<tr>";
+                echo "<td><img src='../Icon/car_seats.png' class='icon'> </td>";
+                echo "<td>" . $rows['car_nb_seats'] . "</td>";
+                echo "<td><img src='../Icon/car_doors.png' class='icon'> </td>";
+                echo "<td>" . $rows['car_nb_doors'] . "</td>";
+                echo "<td><img src='../Icon/coin.png' class='icon'> </td>";
+                echo "<td>" . $rows['car_price'] . "/day</td>";
+                echo "</tr>";
+                echo "</table>";
+                echo "<a class='link-booking-summary' href='BookingSummary.php?car_id=" .  $rows['car_id'] . "&pickup_date=" . $_GET['pickup_date'] . "&return_date=" . $_GET['return_date'] . "&car_nb_seats=" . $rows['car_nb_seats'] . "&car_nb_doors=" . $rows['car_nb_doors'] . "&car_name=" . $rows['car_name'] . "&car_price=" . $rows['car_price'] ."'>Book</a>";
+                echo "</div> </div> </div>";
+            }
         }
         echo "</div>";
     }
@@ -77,21 +79,31 @@
         echo $link;
     }
 
-//    function isCarAvaible($id){
-//        include("Db_connexion.php");
-//
-//        $sql = "SELECT * FROM booking WHERE booking_car_id=" . $id . '&& booking_pickup_date <=' . $_GET['booking_pickup_date'];
-//        $result = mysqli_query($con, $sql);
-//
-//        if (mysqli_num_rows($result) <= 0){
-//            return true;
-//        }
-//        else{
-//            while ($rows = mysqli_fetch_array($result)){
-//                if ($rows['booking_pickup_date'] <= $_SESSION[''])
-//            }
-//        }
-//    }
+    function isCarAvaible($id, $stock){
+        include("Db_connexion.php");
+        $pickup = $_GET['pickup_date'];
+        $return = $_GET['return_date'];
+        $sql = "SELECT * FROM booking WHERE booking_car_id=" . $id;
+        $result = mysqli_query($con, $sql);
+
+        if (mysqli_num_rows($result) <= 0){
+            return true;
+        }
+        else{
+            $count = 0;
+            while ($rows = mysqli_fetch_array($result)){
+                if (!(($return < $rows['booking_pickup_date']) || ($pickup > $rows['booking_return_date']))){
+                    $count++;
+                }
+            }
+            if ($count < $stock){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+    }
 ?>
 
 
