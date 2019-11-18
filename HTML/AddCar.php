@@ -31,22 +31,22 @@
                 </div>
 
                 <label>Brand:</label>
-                <input type="text" name="car_brand">
+                <input type="text" name="car_brand" required>
                 <label>Number of doors:</label>
-                <input type="text" name="car_nb_door">
+                <input type="text" name="car_nb_door" required>
                 <label>Number of seats:</label>
-                <input type="text" name="car_nb_seat">
+                <input type="text" name="car_nb_seat" required>
                 <label>Price: </label>
-                <input type="text" name="car_price">
+                <input type="text" name="car_price" required>
                 <label>Stock available: </label>
-                <input type="text" name="car_stock">
+                <input type="text" name="car_stock" required>
                 <label>Type of car:</label>
-                <select name="car_type">
+                <select name="car_type" required>
                     <option>Car</option>
                     <option>Special</option>
                     <option>Truck</option>
                 </select>
-                <input type="file" name="car_photo" id="car_photo">
+                <input type="file" name="car_photo" id="car_photo" required>
                 <button type="submit" class="button-booking">Add</button>
             </form>
         </div>
