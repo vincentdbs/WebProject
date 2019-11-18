@@ -20,15 +20,12 @@
 
 //check if old password = $previous
     if ($pwd_bd === $previous){
-
-
         if ($new === $confirm){
             echo $uid . " " . $previous . " " . $new . " " .  $confirm . " " . $pwd_bd;
             $sql = "UPDATE user SET " .
                 "user_password = '$confirm' WHERE user_id = $uid";
             mysqli_query($con, $sql);
 
-            //TODO fenetre blanche on uptdate
             if(mysqli_affected_rows($con)<=0)
             {
                 echo "<script>alert('Cannot update data!');";
@@ -39,6 +36,10 @@
             }
         }
     }
+    else{
+        die("<script>alert('Bad password'); window.history.go(-1);</script>");
+    }
+   /*TODO page blanch si mauvasis mot de passe*/
 
 
 ?>

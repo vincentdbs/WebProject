@@ -41,11 +41,11 @@
             <form action="../PHP/EditPersonnalInfo.php" method="post">
                 <h2>Personal information</h2>
                 <label>Last name:</label>
-                <input type="text" class="input-account" name="lastName" value="<?php echo $_SESSION['user_last_name'] ?>">
+                <input type="text" class="input-account" name="lastName" value="<?php echo $_SESSION['user_last_name'] ?>" required>
                 <label>First name:</label>
-                <input type="text" class="input-account" name="firstName" value="<?php echo $_SESSION['user_first_name'] ?>">
+                <input type="text" class="input-account" name="firstName" value="<?php echo $_SESSION['user_first_name'] ?>" required>
                 <label>Email:</label>
-                <input type="email" class="input-account" name="email" value="<?php echo $_SESSION['user_email'] ?>">
+                <input type="email" class="input-account" name="email" value="<?php echo $_SESSION['user_email'] ?>" required>
                 <input type="submit" value="Save" class="button-save">
             </form>
         </div>
@@ -55,11 +55,11 @@
             <p class="little">You want to change your password, nothing more simple. Enter your old password then type your new one and confirm it. That's it !</p>
             <form action="../PHP/EditPassword.php" method="post">
                 <label>Old password:</label>
-                <input type="password" class="input-account" name="pwd_previous">
+                <input type="password" class="input-account" name="pwd_previous" required>
                 <label>New password:</label>
-                <input type="password" class="input-account" name="pwd_new">
+                <input type="password" class="input-account" name="pwd_new" required>
                 <label>Confirm password:</label>
-                <input type="password" class="input-account" name="pwd_confirm">
+                <input type="password" class="input-account" name="pwd_confirm" required>
                 <input type="submit" value="Save" class="button-save">
             </form>
         </div>

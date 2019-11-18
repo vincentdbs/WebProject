@@ -30,6 +30,7 @@
             header("location: ../HTML/HomePage.php");
         }
     }
+
 ?>
 
 <!-- TODO crypter les mots de passe -->

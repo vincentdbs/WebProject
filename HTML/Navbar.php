@@ -24,5 +24,3 @@
     </ol>
     <a class="icon" onclick="displayMenu()"><img src="../Icon/burger_menu.png" id="burger_menu"></a>
 </div>
-
-<!--TODO ajouter tous les liens vers toutes les pages en fonction du profile -->
