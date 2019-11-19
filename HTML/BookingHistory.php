@@ -27,9 +27,9 @@ if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
     ?>
 
     <div class="side-bar">
-        <a href="#actual"><img class="icon_profile" src="../Icon/edit.png"></a>
-        <a href="#next"><img class="icon_profile" src="../Icon/lock.png"></a>
-        <a href="#past"><img class="icon_profile" src="../Icon/lock.png"></a>
+        <a href="#actual"><img class="icon_profile" src="../Icon/past.png"></a>
+        <a href="#next"><img class="icon_profile" src="../Icon/calendar.png"></a>
+        <a href="#past"><img class="icon_profile" src="../Icon/future.png"></a>
     </div>
     <!-- TODO changer icon -->
 
