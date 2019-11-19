@@ -38,10 +38,10 @@
             <h2>Choose your car :</h2>
             <form action="<?php  include_once "../PHP/RetrieveCar.php"; getActualURL();?>" method="post">
                 <select name="type">
-                    <option value="All" selected='<?php if($_GET['car_type'] == 'All'){ echo "true";} ?>'>All</option>
-                    <option value="Car" selected='<?php if($_GET['car_type'] == 'Car'){ echo "true";} ?>'>Car</option>
-                    <option value="Truck" selected='<?php if($_GET['car_type'] == 'Truck'){ echo "true";} ?>'>Truck</option>
-                    <option value="Special" selected='<?php if($_GET['car_type'] == 'Special'){ echo "true";} ?>'>Special</option>
+                    <option value="All" <?php if($_GET['car_type'] === 'All'){ echo "selected='true'";} ?>>All</option>
+                    <option value="Car" <?php if($_GET['car_type'] == 'Car'){ echo "selected='true'";} ?>>Car</option>
+                    <option value="Truck" <?php if($_GET['car_type'] == 'Truck'){ echo "selected='true'";} ?>>Truck</option>
+                    <option value="Special" <?php if($_GET['car_type'] == 'Special'){ echo "selected='true'";} ?>>Special</option>
                 </select>
                 <select name="nb_seats">
                     <option value="">Number of seats</option>
