@@ -17,7 +17,8 @@
         echo "<td>" . $rows_user['user_email'] . "</td>";
 
         //retrieve rented item by the user
-        $sql_booking = 'SELECT * FROM booking where booking_user_id=' . $rows_user['user_id'];
+        $today = date("Y-m-d");
+        $sql_booking = "SELECT * from booking WHERE booking_user_id= " . $rows_user['user_id'] . " AND booking_pickup_date < '". $today . "' AND booking_return_date > '" . $today . "'";
         $result_booking = mysqli_query($con, $sql_booking);
         if (mysqli_num_rows($result_booking) <= 0){
             echo "<td>No</td>";

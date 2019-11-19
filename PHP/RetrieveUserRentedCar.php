@@ -1,7 +1,9 @@
 <?php
     include "Db_connexion.php";
 
-    $sql = "SELECT * FROM booking WHERE booking_user_id=" . $_SESSION['user_id'];
+    $today = date("Y-m-d");
+    $sql = "SELECT * from booking WHERE booking_user_id= " . $_SESSION['user_id'] . " AND booking_pickup_date < '". $today . "' AND booking_return_date > '" . $today . "'";
+    /*TODO change pour avoir la actuelle booking*/
     $result = mysqli_query($con, $sql);
 
     if (mysqli_num_rows($result) <= 0){
