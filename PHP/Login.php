@@ -22,13 +22,15 @@
 
         }
 
-        if($_SESSION['user_role']==="admin") {
-            header("location: ../HTML/MyProfile.php");
-        }
-        else if($_SESSION['user_role']==="user"){
-            echo "window.location.href='../HTML/HomePage.php';</script>";
-            header("location: ../HTML/HomePage.php");
-        }
+//        if($_SESSION['user_role']==="admin") {
+//            header("location: ../HTML/MyProfile.php");
+//        }
+//        else if($_SESSION['user_role']==="user"){
+//            header("location: ../HTML/HomePage.php");
+//
+//        }
+        die("<script>window.history.go(-2);</script>");
+
     }
 
 ?>

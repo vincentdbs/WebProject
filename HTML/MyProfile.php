@@ -1,10 +1,7 @@
 <?php
     session_start();
-    if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
+    if (!isset($_SESSION['user_id'])){
         header('location: ConnexionPage.php');
-    }
-    else if (isset($_SESSION['user_id']) == 'admin'){
-        header('location: HomePage.php');
     }
 ?>
 
