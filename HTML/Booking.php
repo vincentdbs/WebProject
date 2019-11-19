@@ -1,6 +1,9 @@
 <?php
     session_start();
-    if($_SESSION['user_role'] == 'user'){
+    if (!(isset($_SESSION['user_role']))){
+        header('location: ConnexionPage.php');
+    }
+    else if($_SESSION['user_role'] == 'admin'){
         header('location: HomePage.php');
     }
 

@@ -38,21 +38,6 @@
     ?>
 
     <main>
-        <div class="recap">
-            <div class="step">
-                <h3>Step 1 : Choose your date</h3>
-                <p>Pickup date : <?php echo $_GET['pickup_date']?></p>
-                <p>Return date : <?php echo $_GET['return_date']?></p>
-            </div>
-            <div class="step">
-                <h3>Step 2 : Choose your car</h3>
-                <p>Pickup date : <?php echo $_GET['pickup_date']?></p>
-                <p>Return date : <?php echo $_GET['return_date']?></p>
-            </div>
-            <div class="step">
-                <h3>Step 3 : Finalize your order</h3>
-            </div>
-        </div>
         <div class="selection">
             <h2>Choose your car :</h2>
             <form action="<?php  include_once "../PHP/RetrieveCar.php"; getActualURL();?>" method="post">
