@@ -1,3 +1,17 @@
+.recap{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 6px;
+    background-color: #292929;
+    color: #f9fae9;
+}
+
+.step{
+    flex: 1;
+    padding: 12px;
+}
+
 .center h2{
     color: #F8FF00;
     margin: 0 auto;
@@ -96,6 +110,10 @@
 }
 
 @media (min-device-width: 0px) and (max-device-width: 480px) {
+    .recap{
+        flex-wrap: wrap;
+    }
+
     /*Form*/
     .center{
         margin: 16px auto;
@@ -125,6 +143,11 @@
 
     .card-car-image{
         height: 200px;
+    }
+
+    #burger_menu{
+        position: absolute;
+        right: 12px;
     }
 
 }
