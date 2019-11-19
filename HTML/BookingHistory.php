@@ -26,10 +26,7 @@ if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
     include "../HTML/Navbar.php";
     ?>
 
-    <div class="content">
-        <h2>Previous booking</h2>
-        <?php include "../PHP/RetrieveBookingHistory.php"; retrievePastBooking(); ?>
-    </div>
+
 
     <div class="content">
         <h2>Actual booking</h2>
@@ -39,7 +36,11 @@ if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
     <div class="content">
         <h2>Next booking</h2>
         <?php include_once "../PHP/RetrieveBookingHistory.php"; retieveNextBooking(); ?>
+    </div>
 
+    <div class="content">
+        <h2>Previous booking</h2>
+        <?php include_once "../PHP/RetrieveBookingHistory.php"; retrievePastBooking(); ?>
     </div>
 
 
