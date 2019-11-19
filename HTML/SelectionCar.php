@@ -11,6 +11,10 @@
         header('location: ../HTML/Booking.php');
     }
 
+    if($_SESSION['user_role'] == 'admin'){
+        header('location: HomePage.php');
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

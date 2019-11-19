@@ -3,7 +3,7 @@ session_start();
 if (!isset($_SESSION['user_id'])){
     header('location: ConnexionPage.php');
 }
-elseif ($_SESSION['user_role'] == 'user'){
+else if($_SESSION['user_role'] == 'user'){
     header('location: HomePage.php');
 }
 

@@ -3,6 +3,9 @@ session_start();
 if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
     header('location: ConnexionPage.php');
 }
+else if (isset($_SESSION['user_id']) == 'admin'){
+    header('location: HomePage.php');
+}
 
 //TODO securiser toutes les pages avec redirections en fonction du role
 ?>
@@ -31,7 +34,6 @@ if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
         <a href="#next"><img class="icon_profile" src="../Icon/calendar.png"></a>
         <a href="#past"><img class="icon_profile" src="../Icon/future.png"></a>
     </div>
-    <!-- TODO changer icon -->
 
     <div class="info">
         <div class="category" id="actual">

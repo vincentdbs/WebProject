@@ -3,7 +3,7 @@
     if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
         header('location: ConnexionPage.php');
     }
-    else if ($_SESSION['user_role'] == "admin"){
+    else if (isset($_SESSION['user_id']) == 'admin'){
         header('location: HomePage.php');
     }
 ?>

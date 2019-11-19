@@ -1,5 +1,9 @@
 <?php
     session_start();
+    if($_SESSION['user_role'] == 'user'){
+        header('location: HomePage.php');
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

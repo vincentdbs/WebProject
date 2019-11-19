@@ -5,6 +5,7 @@ include "../PHP/BookingSelectionCar.php";
 $_SESSION['pickup_date'] = $_GET['pickup_date'];
 $_SESSION['return_date'] = $_GET['return_date'];
 $_SESSION['car_id'] = $_GET['car_id'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
