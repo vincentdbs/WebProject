@@ -3,6 +3,9 @@
     if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
         header('location: ConnexionPage.php');
     }
+    else if ($_SESSION['user_role'] == "admin"){
+        header('location: HomePage.php');
+    }
 ?>
 
 <!DOCTYPE html>
@@ -68,6 +71,7 @@
             if($_SESSION['user_role'] == 'user'){
                 echo " <div class='category' id='user_history'>
                          <h2>History</h2>";
+                echo "<a href='../HTML/BookingHistory.php' class='little'>See all your booking</a>";
                 include "../PHP/RetrieveUserRentedCar.php";
                 echo "</div>";
             }
