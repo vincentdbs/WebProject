@@ -56,6 +56,12 @@ input,  label{
     padding: 4px 10px 4px 20px;
 }
 
+.category a{
+    text-decoration: none;
+    color: #9e9e9e;
+
+}
+
 
 @media (min-device-width: 0px) and (max-device-width: 480px) {
     .category{
