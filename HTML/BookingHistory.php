@@ -7,7 +7,6 @@ else if (isset($_SESSION['user_id']) == 'admin'){
     header('location: HomePage.php');
 }
 
-//TODO securiser toutes les pages avec redirections en fonction du role
 ?>
 
 <!DOCTYPE html>

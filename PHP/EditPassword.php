@@ -39,7 +39,5 @@
     else{
         die("<script>alert('Bad password'); window.history.go(-1);</script>");
     }
-   /*TODO page blanch si mauvasis mot de passe*/
-
 
 ?>
