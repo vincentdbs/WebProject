@@ -40,7 +40,7 @@ form input{
 
 @media (min-device-width: 0px) and (max-device-width: 480px) {
     .summary-booking, .summary-car, .summary-driver, form{
-        width: 90%;
+        width: 95%;
     }
 
     .summary-booking, .summary-car, .summary-driver{
@@ -58,7 +58,6 @@ form input{
     .summary-car{
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: linear-gradient(0deg, rgba(0,0,0,0.8995973389355743) 0%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0.7035189075630253) 50%, rgba(0,0,0,0.8) 70%, rgba(0,0,0,0.9) 100%), url("../Image/photography-of-blue-wagon-audi-1035108.jpg");
     }
 
     .summary-driver-table{
@@ -106,11 +105,10 @@ form input{
     .summary-car{
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: linear-gradient(0deg, rgba(0,0,0,0.8995973389355743) 0%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0.7035189075630253) 50%, rgba(0,0,0,0.8) 70%, rgba(0,0,0,0.9) 100%), url("../Image/photography-of-blue-wagon-audi-1035108.jpg");
     }
 
     .summary-driver-table{
-        width: 75%;
+        width: 85%;
     }
 
     td{
@@ -135,15 +133,18 @@ form input{
 }
 
 @media (min-device-width: 1025px) {
+    .summary-car{
+        background-image: none;
+    }
+
     .car-image{
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url("../Image/photography-of-blue-wagon-audi-1035108.jpg");
         max-width:  254px;
     }
 
     .summary-driver-table{
-        width: 50%;
+        width: 70%;
     }
 
     .div-flex > div{
@@ -157,7 +158,6 @@ form input{
 
     form input:hover{
         cursor: pointer;
+        font-weight: bold;
     }
 }
-
-/*TODO patch affichage image booking summary*/
