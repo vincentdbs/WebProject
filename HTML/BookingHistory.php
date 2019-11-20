@@ -51,5 +51,6 @@ else if ($_SESSION['user_id'] == 'admin'){
     </div>
 
     <script src="../JS/navbar.js"></script>
+    <script src="../JS/deleteBookingOnClick.js"></script>
 </body>
 </html>

@@ -53,11 +53,11 @@ $_SESSION['car_id'] = $_GET['car_id'];
                     <table style="width:100%">
                         <tr>
                             <td><img src="../Icon/done.png" class="icon_car"></td>
-                            <td>Free cancellation</td>
+                            <td>Damage insurance</td>
                         </tr>
                         <tr>
                             <td><img src="../Icon/done.png" class="icon_car"></td>
-                            <td>Insurance</td>
+                            <td>Civil insurance</td>
                         </tr>
                         <tr>
                             <td><img src="../Icon/done.png" class="icon_car"></td>
