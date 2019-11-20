@@ -67,7 +67,7 @@
         <?php
             if($_SESSION['user_role'] == 'user'){
                 echo " <div class='category' id='user_history'>
-                         <h2>Next rent</h2>";
+                         <h2>Actual rent</h2>";
                 echo "<a href='../HTML/BookingHistory.php' class='little'>See all your history</a>";
                 include "../PHP/RetrieveUserRentedCar.php";
                 echo "</div>";

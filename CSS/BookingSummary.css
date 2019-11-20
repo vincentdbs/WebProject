@@ -154,6 +154,10 @@ form input{
         width: 25px;
         height: 25px;
     }
+
+    form input:hover{
+        cursor: pointer;
+    }
 }
 
 /*TODO patch affichage image booking summary*/
