@@ -28,11 +28,10 @@
         $date1 = date_create($pickup_date);
         $date2 = date_create($return_date);
         $nb_day = date_diff($date1,$date2);
-        $nb_day = $nb_day->format("%a");
-        $nb_day = number_format($nb_day) ;
+        $nb_day = (int) $nb_day->format("%a");
         $price = $_GET['car_price'];
 
-        $price *= $nb_day;
+        $price *= (int) $nb_day;
         $_SESSION['booking_price'] = $price;
         return $price;
     }
