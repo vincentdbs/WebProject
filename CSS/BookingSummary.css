@@ -4,7 +4,7 @@ body{
 
 .summary-booking, .summary-car, .summary-driver{
     margin: 16px auto;
-    width: 70%;
+    width: 80%;
     padding: 32px;
     box-shadow: -3px 3px 10px 1px rgba(153,153,153,1);
     background-color: white;
@@ -133,10 +133,6 @@ form input{
 }
 
 @media (min-device-width: 1025px) {
-    .summary-car{
-        background-image: none;
-    }
-
     .car-image{
         background-repeat: no-repeat;
         background-size: cover;
