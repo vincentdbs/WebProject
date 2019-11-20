@@ -29,7 +29,7 @@ $_SESSION['car_id'] = $_GET['car_id'];
     ?>
 
     <main>
-        <div class="summary-car" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8995973389355743) 0%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0.7035189075630253) 50%, rgba(0,0,0,0.8) 70%, rgba(0,0,0,0.9) 100%), url('<?php echo $_GET['car_photo']?>');">
+        <div class="summary-car">
             <h2> <?php echo $_GET['car_name']?> </h2>
 
             <div class="div-flex">
@@ -117,10 +117,10 @@ $_SESSION['car_id'] = $_GET['car_id'];
 
 <script src="../JS/navbar.js"></script>
 <script>
+    backGroundImage();
     window.onresize = backGroundImage;
 
     function backGroundImage() {
-        console.log("1");
         let a = document.getElementsByClassName("summary-car");
         if (screen.width > 1024){
             for(let i = 0 ; i < a.length ;i++){
