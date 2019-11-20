@@ -5,7 +5,7 @@
     $user_email = mysqli_real_escape_string($con, $_POST['email']);
     $password = mysqli_real_escape_string($con, $_POST['password']);
 
-    $sql = "Select * from user where user_email = '".$user_email."' && user_password = '".$password."'";
+    $sql = "Select * from user where user_email = '".$user_email."' && user_password = '".md5($password)."'";
 
     $result = mysqli_query($con, $sql);
 
@@ -29,10 +29,7 @@
 //            header("location: ../HTML/HomePage.php");
 //
 //        }
-        die("<script>window.history.go(-2);</script>");
+        header('location: ../HTML/HomePage.php');
 
     }
-
 ?>
-
-<!-- TODO crypter les mots de passe -->
