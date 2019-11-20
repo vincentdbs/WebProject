@@ -1,5 +1,11 @@
 <?php
     session_start();
+    if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
+        header('location: ConnexionPage.php');
+    }
+    else if ($_SESSION['user_id'] == 'user'){
+        header('location: HomePage.php');
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">

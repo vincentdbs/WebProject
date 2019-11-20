@@ -15,5 +15,5 @@
     }
 
     mysqli_close($con);
-    header("location: ../HTML/HomePage.php");
+    header("location: ../HTML/ConnexionPage.php");
 ?>

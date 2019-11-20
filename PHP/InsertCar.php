@@ -1,7 +1,7 @@
 <?php
     include "Db_connexion.php";
 
-    $target_dir = "../Image/";
+    $target_dir = "../Image/Car/";
     $target_file = $target_dir . basename($_FILES["car_photo"]["name"]);
     $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
     $check = getimagesize($_FILES["car_photo"]["tmp_name"]);
