@@ -16,4 +16,5 @@
 
     mysqli_close($con);
     header("location: ../HTML/ConnexionPage.php");
+    //TODO verifier que le mot de passe n'est pas déja pris;
 ?>

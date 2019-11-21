@@ -36,10 +36,6 @@
     padding-left: 8px;
 }
 
-.content table{
-    margin: 0 auto;
-}
-
 .content td{
     padding: 0 4px;
 }
@@ -54,13 +50,13 @@
     display: inline-block;
 }
 
-#bin{
+.modify-icon{
     display: inline-block;
     float: right;
     margin-right: 8px;
 }
 
-#bin:hover{
+.modify-icon:hover{
     cursor: pointer;
 }
 

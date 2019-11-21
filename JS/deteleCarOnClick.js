@@ -1,4 +1,4 @@
-function callPhp(str){
+function deleteCar(str){
     if (confirm("Do you really want to delete this car ?")) {
         let xhttp;
         xhttp = new XMLHttpRequest();
@@ -11,4 +11,9 @@ function callPhp(str){
         xhttp.open("GET", "../PHP/CarManagementDelete.php?car_id="+ str, true);
         xhttp.send();
     }
+}
+
+function editCar(id) {
+    let url = "../HTML/EditCarPage.php?car_id=" + id;
+    window.open(url,"_self")
 }

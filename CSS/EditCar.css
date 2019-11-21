@@ -1,0 +1,49 @@
+.edit-content{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 32px;
+    box-shadow: -3px 3px 10px 1px rgba(153,153,153,1);
+
+}
+
+.edit-content > div{
+    flex: 1;
+}
+
+.image-car{
+    max-width: 100%;
+    min-width: 335px;
+}
+
+.form-right{
+    padding: 16px;
+}
+
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+input{
+    outline: none;
+    text-decoration: none;
+    border-bottom: rgba(255, 255 , 255 , 0.87) solid 5px;
+}
+
+@media (min-device-width: 0px) and (max-device-width: 480px) {
+}
+
+@media (min-device-width: 481px) and (max-device-width: 1024px) {
+}
+
+@media (min-device-width: 1025px) {
+
+}
