@@ -34,33 +34,7 @@ include "../HTML/Navbar.php";
         <div class="form-right">
             <form enctype="multipart/form-data">
                 <table>
-                    <tr>
-                        <td><label>Car name</label></td>
-                        <td><input type="text" class="" name="car_name" required></td>
-                    </tr>
-                    <tr>
-                        <td><label>Car brand</label></td>
-                        <td><input type="text" class="" name="car_brand" required></td>
-                    </tr>
-                    <tr>
-                        <td><label>Number of doors</label></td>
-                        <td><input type="text" class="" name="car_doors" required></td>
-                    </tr>
-                    <tr>
-                        <td><label>Number of seats</label></td>
-                        <td><input type="text" class="" name="car_seats" required></td>
-                    </tr>
-                    <tr>
-                        <td><label>Price</label></td>
-                        <td><input type="text" class="" name="car_price" required></td>
-                    </tr>
-                    <tr>
-                        <td><label>Photo</label></td>
-                        <td><input type="text" class="" name="car_photo" required></td>
-                    </tr>
-                    <tr>
-                        <td><input type="submit" value="Save" class="button-save"></td>
-                    </tr>
+                    <?php include "../PHP/EditCarGet.php";?>
                 </table>
             </form>
         </div>
