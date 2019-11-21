@@ -8,9 +8,8 @@
         die("<p> Sorry, we do not find anything that correspond to your research ! </p>");
     }
 
-
     while($rows_user = mysqli_fetch_array($result_user)){
-        echo "<tr>";
+        echo '<tr>';
         echo "<td>" . $rows_user['user_id'] . "</td>";
         echo "<td>" . $rows_user['user_first_name'] . "</td>";
         echo "<td>" . $rows_user['user_last_name'] . "</td>";
@@ -26,9 +25,15 @@
         }
         else{
             echo "<td>Yes</td>";
-            echo "<td><img class='icon_table' onclick='displayDiv(this)' src='../Icon/down_arrow.png' ></img></td>";
-        }
+            echo "<td>";
 
+            echo "<img class='icon_table' onclick='displayDiv(this)' src='../Icon/down_arrow.png' ></img>";
+            echo "</td>";
+        }
+        echo "</td>";
+        echo "<td>";
+        echo "<img class='icon_table' onclick='upgradeToManager(". $rows_user['user_id'] .")' src='../Icon/updgrade_arrow.png' ></img>";
+        echo "</td>";
         echo "</tr>";
 
         //display all rented item

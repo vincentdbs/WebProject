@@ -34,8 +34,7 @@ include("Navbar.php");
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Email</th>
-                    <th>On loan ?</th>
-                    <th></th>
+                    <th colspan="3">On loan ?</th>
                 </tr>
             </thead>
             <?php include("../PHP/GetCustomerManagement.php")?>

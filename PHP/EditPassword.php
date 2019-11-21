@@ -15,6 +15,7 @@
     }
     $row = mysqli_fetch_array($result);
     $pwd_bd = $row['user_password'];
+    /*TODO crypter mot de passe on update*/
 
 
 

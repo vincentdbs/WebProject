@@ -22,3 +22,15 @@ function displayDiv(icon) {
         icon.src = "http://localhost/Projet/Icon/down_arrow.png";
     }
 }
+
+function upgradeToManager(id) {
+    let xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            alert("The manager has been promoted !");
+            window.open("../HTML/CustomerManagement.php", "_self");
+        }
+    };
+    xhttp.open("GET", "../PHP/CustomerManagementUpgrade.php?user_id="+ id, true);
+    xhttp.send();
+}
