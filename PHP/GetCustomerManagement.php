@@ -46,7 +46,7 @@
             else{
                 $rows_car = mysqli_fetch_array($result_car);
                 echo "<tr class='item-tr' style='display: none'>
-                <td colspan='6'>
+                <td colspan='7'>
                     <div class='item'>
                         <img src='" . $rows_car['car_photo'] . "'class='item-image'>
                         <div class='item-div'>
