@@ -29,31 +29,52 @@
     <div class="main-hero-image image">
         <div class="center">
             <form action="../PHP/InsertCar.php" method="post" class="form-add-car" enctype="multipart/form-data">
+
                 <h2>Add a car</h2>
+                <table>
+                    <tr>
+                        <td><label class="labelToTop">Car name</label></td>
+                        <td><label>Brand</label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="input-text" type="text" name="car_name" required></td>
+                        <td><input class="input-text" type="text" name="car_brand" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Number of doors</label></td>
+                        <td><label>Number of seats</label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="input-text" type="text" name="car_nb_door" required></td>
+                        <td><input class="input-text" type="text" name="car_nb_seat" required></td>
+                    </tr>
+                    <tr>
+                       <td><label>Price</label></td>
+                       <td><label>Stock available</label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="input-text" type="text" name="car_price" required></td>
+                        <td><input class="input-text" type="text" name="car_stock" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Type of car</label></td>
+                        <td><label>Photo</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="car_type" required>
+                                <option>Car</option>
+                                <option>Special</option>
+                                <option>Truck</option>
+                            </select>
+                        </td>
+                        <td><input type="file" name="car_photo" id="car_photo" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit" class="button-booking">Add</button></td>
+                    </tr>
 
-                <div class="div-input-label">
-                    <label class="labelToTop">Car name:</label>
-                    <input type="text" name="car_name" required>
-                </div>
-
-                <label>Brand:</label>
-                <input type="text" name="car_brand" required>
-                <label>Number of doors:</label>
-                <input type="text" name="car_nb_door" required>
-                <label>Number of seats:</label>
-                <input type="text" name="car_nb_seat" required>
-                <label>Price: </label>
-                <input type="text" name="car_price" required>
-                <label>Stock available: </label>
-                <input type="text" name="car_stock" required>
-                <label>Type of car:</label>
-                <select name="car_type" required>
-                    <option>Car</option>
-                    <option>Special</option>
-                    <option>Truck</option>
-                </select>
-                <input type="file" name="car_photo" id="car_photo" required>
-                <button type="submit" class="button-booking">Add</button>
+                </table>
             </form>
         </div>
     </div>

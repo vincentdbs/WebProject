@@ -22,6 +22,12 @@
     padding-bottom: 16px;
 }
 
+table{
+    margin: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
 .form-add-car{
     margin: 0 auto;
     padding: 24px;
@@ -30,23 +36,31 @@
 
 .form-add-car input, .form-add-car select, .form-add-car label{
     display: block;
-    color:  white;
+    color:  rgba(255, 255 , 255 , 0.87);
+    background-color: inherit;
     margin-top: 6px;
+}
+
+.input-text{
+    border: none;
+    border-bottom: rgba(255, 255 , 255 , 0.87) solid 1px;
+    width: 75%;
+}
+
+.input-text:focus{
+    border-bottom: #F8FF00 solid 1px;
 }
 
 .form-add-car select{
     margin-bottom: 12px;
+    outline: none;
 }
 
-.form-add-car  select, .form-add-car  input{
-    color: black;
+.form-add-car  select{
     text-decoration: none;
-    border: none;
-    width: 100%;
 }
 
 .form-add-car label .form-add-car p{
-    color: white;
     padding: 8px 0;
 }
 
@@ -56,6 +70,7 @@
 
 option{
     padding: 12px;
+    color: black;
 }
 
 @media (min-device-width: 0px) and (max-device-width: 480px) {
@@ -99,25 +114,3 @@ option{
         height: 35px;
     }
 }
-
-/*.div-input-label{*/
-/*    position: relative;*/
-/*}*/
-
-/*.labelToTop{*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    transition: 0.2s;*/
-/*}*/
-
-/*input:focus + .labelToTop {*/
-/*    top: 100%;*/
-/*    margin-top: -16px;*/
-/*}*/
-
-/*input:valid {*/
-/*    background: white;*/
-/*}*/
