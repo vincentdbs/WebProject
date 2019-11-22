@@ -17,6 +17,7 @@
         echo "<script>alert('Cannot update data!');";
         die ("window.location.href='../HTML/EditCarPage.php?car_id='" . $_SERVER['REQUEST_URI'] . ";</script>");
     }else{
+        unset($_SESSION['car_id']);
         echo "<script>alert('Data updated!);</script>";
         echo "<script>window.location.href='../HTML/CarManagement.php';</script>";
     }

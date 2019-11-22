@@ -1,7 +1,7 @@
 <?php
     include("Db_connexion.php");
 
-    $sql = "SELECT * FROM car";
+    $sql = "SELECT * FROM car ORDER BY car_name";
     $result = mysqli_query($con, $sql);
     if (mysqli_num_rows($result) <= 0){
         die("<p> Sorry, we do not find anything that correspond to your research ! </p>");

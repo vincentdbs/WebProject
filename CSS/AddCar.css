@@ -51,6 +51,10 @@ table{
     border-bottom: #F8FF00 solid 1px;
 }
 
+.input-text:invalid{
+    border-bottom: red solid 1px;
+}
+
 .form-add-car select{
     margin-bottom: 12px;
     outline: none;

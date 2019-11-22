@@ -37,7 +37,7 @@ include("Navbar.php");
                     <th colspan="3">On loan ?</th>
                 </tr>
             </thead>
-            <?php include("../PHP/GetCustomerManagement.php")?>
+            <?php include("../PHP/CustomerManagementGet.php") ?>
         </table>
     </div>
 </main>

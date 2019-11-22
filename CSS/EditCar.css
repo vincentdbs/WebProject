@@ -42,6 +42,10 @@ input[type = text]{
     border-bottom: #9e9e9e 1px solid;
 }
 
+input[type = text]:invalid{
+    border-bottom: red 1px solid;
+}
+
 .upload-btn-wrapper {
     position: relative;
     overflow: hidden;

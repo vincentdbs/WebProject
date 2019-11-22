@@ -25,12 +25,14 @@ function displayDiv(icon) {
 
 function upgradeToManager(id) {
     let xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            alert("The manager has been promoted !");
-            window.open("../HTML/CustomerManagement.php", "_self");
-        }
-    };
-    xhttp.open("GET", "../PHP/CustomerManagementUpgrade.php?user_id="+ id, true);
-    xhttp.send();
+    if(confirm("Do you want to promote this user to administrator ?")){
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                alert("The manager has been promoted !");
+                window.open("../HTML/CustomerManagement.php", "_self");
+            }
+        };
+        xhttp.open("GET", "../PHP/CustomerManagementUpgrade.php?user_id="+ id, true);
+        xhttp.send();
+    }
 }
