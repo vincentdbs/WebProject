@@ -36,10 +36,38 @@ input{
     overflow: hidden;
 }
 
-.input-text{
+input[type = text]{
     outline: none;
     border: none;
     border-bottom: #9e9e9e 1px solid;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.upload-btn{
+    border: 2px solid #9e9e9e;
+    color: #9e9e9e;
+    background-color: inherit;
+    padding: 4px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type=file]:hover{
+    cursor: pointer;
+}
+
+input[type=file] {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
 }
 
 input:focus{
@@ -66,26 +94,3 @@ input:focus{
     }
 }
 
-.upload-btn-wrapper {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-}
-
-.btn {
-    border: 2px solid gray;
-    color: gray;
-    background-color: white;
-    padding: 8px 20px;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.upload-btn-wrapper input[type=file] {
-    font-size: 100px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-}
