@@ -3,9 +3,9 @@
     include "Db_connexion.php";
 
     $uid = $_SESSION['user_id'];
-    $previous = $_POST['pwd_previous'];
-    $new = $_POST['pwd_new'];
-    $confirm = $_POST['pwd_confirm'];
+    $previous = md5($_POST['pwd_previous']);
+    $new = md5($_POST['pwd_new']);
+    $confirm = md5($_POST['pwd_confirm']);
 
     //get old pwd
     $sql = "SELECT * FROM user WHERE user_id = $uid";
@@ -15,9 +15,6 @@
     }
     $row = mysqli_fetch_array($result);
     $pwd_bd = $row['user_password'];
-    /*TODO crypter mot de passe on update*/
-
-
 
 //check if old password = $previous
     if ($pwd_bd === $previous){
