@@ -55,6 +55,16 @@ table{
     border-bottom: red solid 1px;
 }
 
+input[type = number]{
+    text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .form-add-car select{
     margin-bottom: 12px;
     outline: none;
