@@ -27,14 +27,10 @@ include "../HTML/Navbar.php";
 
 <main>
     <div class="edit-content">
-
-                    <?php include "../PHP/EditCarGet.php";?>
-
+        <?php include "../PHP/EditCarGet.php";?>
     </div>
 
 </main>
 <script src="../JS/navbar.js"></script>
 </body>
 </html>
-
-<!-- TODO ajouter des alt à toutes les imahes-->

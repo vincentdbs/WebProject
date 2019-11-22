@@ -40,5 +40,5 @@
     }
 
     mysqli_close($con);
-    echo ("<script>window.history.go(-1);</script>");
+    echo ("<script>alert('The car has been added'); window.history.go(-1);</script>");
 ?>

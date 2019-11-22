@@ -29,7 +29,6 @@
     <div class="main-hero-image image">
         <div class="center">
             <form action="../PHP/InsertCar.php" method="post" class="form-add-car" enctype="multipart/form-data">
-
                 <h2>Add a car</h2>
                 <table>
                     <tr>
@@ -73,7 +72,6 @@
                     <tr>
                         <td colspan="2"><button type="submit" class="button-booking">Add</button></td>
                     </tr>
-
                 </table>
             </form>
         </div>
