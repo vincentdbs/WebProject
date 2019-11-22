@@ -46,15 +46,15 @@
                     </tr>
                     <tr>
                         <td><input class="input-text" type="number" min="0" name="car_nb_door" required></td>
-                        <td><input class="input-text" type="number" min="0" name="car_nb_seat" required></td>
+                        <td><input class="input-text" type="number" min="1" name="car_nb_seat" required></td>
                     </tr>
                     <tr>
                        <td><label>Price</label></td>
                        <td><label>Stock available</label></td>
                     </tr>
                     <tr>
-                        <td><input class="input-text" min="0" type="number" name="car_price" required></td>
-                        <td><input class="input-text" min="0" type="number" name="car_stock" required></td>
+                        <td><input class="input-text" min="1" type="number" name="car_price" required></td>
+                        <td><input class="input-text" min="1" type="number" name="car_stock" required></td>
                     </tr>
                     <tr>
                         <td><label>Type of car</label></td>

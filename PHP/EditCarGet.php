@@ -25,13 +25,13 @@
         echo "<td><input type=\"text\" name=\"car_brand\" required value='". $row['car_brand'] ."'></td>";
         echo "</tr><tr>";
         echo "<td><label>Number of doors</label></td>";
-        echo "<td><input type=\"text\"  name=\"car_nb_doors\" required value='". $row['car_nb_doors'] ."'></td>";
+        echo "<td><input type=\"number\" min='0'  name=\"car_nb_doors\" required value='". $row['car_nb_doors'] ."'></td>";
         echo "</tr><tr>";
         echo "<td><label>Number of seats</label></td>";
-        echo "<td><input type=\"text\" name=\"car_nb_seats\" required value='". $row['car_nb_seats'] ."'></td>";
+        echo "<td><input type=\"number\" min='1' name=\"car_nb_seats\" required value='". $row['car_nb_seats'] ."'></td>";
         echo "</tr><tr>";
         echo "<td><label>Price</label></td>";
-        echo "<td><input type=\"text\" name=\"car_price\" required value='". $row['car_price'] ."'></td>";
+        echo "<td><input type=\"number\" min='1' name=\"car_price\" required value='". $row['car_price'] ."'></td>";
         echo "</tr>";
         echo "<tr>";
         echo "<td><input type=\"submit\" value=\"Save\" class=\"button-save\"></td>";
