@@ -1,10 +1,8 @@
 <?php
     include "Db_connexion.php";
-    $car_id = $_GET['car_id'];
+    $_SESSION['car_id'] = $_GET['car_id'];
 
-
-
-    $sql = "SELECT * FROM car WHERE car_id=" . $car_id;
+    $sql = "SELECT * FROM car WHERE car_id=" . $_SESSION['car_id'];
     $result = mysqli_query($con, $sql);
 
     if (mysqli_num_rows($result) <= 0){
@@ -17,7 +15,7 @@
         echo "</div>";
         echo '<div class="form-right">';
         echo '<h2>Edit the car</h2>';
-        echo '<form enctype="multipart/form-data">';
+        echo '<form action="../PHP/EditCarUpdate.php" method="post" enctype="multipart/form-data">';
         echo '<table>';
         echo "<tr>";
         echo "<td><label>Car name</label></td>";
@@ -27,21 +25,15 @@
         echo "<td><input type=\"text\" name=\"car_brand\" required value='". $row['car_brand'] ."'></td>";
         echo "</tr><tr>";
         echo "<td><label>Number of doors</label></td>";
-        echo "<td><input type=\"text\"  name=\"car_doors\" required value='". $row['car_nb_doors'] ."'></td>";
+        echo "<td><input type=\"text\"  name=\"car_nb_doors\" required value='". $row['car_nb_doors'] ."'></td>";
         echo "</tr><tr>";
         echo "<td><label>Number of seats</label></td>";
-        echo "<td><input type=\"text\" name=\"car_seats\" required value='". $row['car_nb_seats'] ."'></td>";
+        echo "<td><input type=\"text\" name=\"car_nb_seats\" required value='". $row['car_nb_seats'] ."'></td>";
         echo "</tr><tr>";
         echo "<td><label>Price</label></td>";
         echo "<td><input type=\"text\" name=\"car_price\" required value='". $row['car_price'] ."'></td>";
-        echo "</tr><tr>";
-        echo "<td><label>Photo</label></td>";
-        echo '<td><div class="upload-btn-wrapper">';
-        echo '<button class="upload-btn">Upload a file</button>';
-        echo '<input type="file" name="car_photo" required/>';
-        echo '</div></td>';
-//        echo "<td><input type=\"file\"  name=\"car_photo\" required></td>";
-        echo "</tr><tr>";
+        echo "</tr>";
+        echo "<tr>";
         echo "<td><input type=\"submit\" value=\"Save\" class=\"button-save\"></td>";
         echo "</tr>";
     }
