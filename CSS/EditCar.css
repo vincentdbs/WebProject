@@ -5,31 +5,35 @@
     right: 0;
     margin: 0 auto;
     width: 90%;
-    display: flex;
-    flex-wrap: wrap;
     background-color: white;
     padding: 32px;
     box-shadow: -3px 3px 10px 1px rgba(153,153,153,1);
 
 }
 
-.edit-content > div{
-    flex: 1;
-}
-
 .image-car{
     max-width: 100%;
-    min-width: 335px;
 }
 
 .form-right{
     padding: 16px;
+    height: 100%;
+    margin: auto 0;
 }
 
 table{
+    table-layout: fixed;
     margin: 0 auto;
     border-collapse: collapse;
     width: 100%;
+}
+
+td{
+    padding-top: 6px;
+}
+
+input{
+    overflow: hidden;
 }
 
 .input-text{
@@ -52,5 +56,36 @@ input:focus{
 }
 
 @media (min-device-width: 1025px) {
+    .edit-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
+    .edit-content > div{
+        flex: 1;
+    }
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
 }

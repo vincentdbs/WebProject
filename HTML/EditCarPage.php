@@ -27,19 +27,14 @@ include "../HTML/Navbar.php";
 
 <main>
     <div class="edit-content">
-        <div class="img-left">
-            <img src="../Image/fiat500.jpg" class="image-car"></img>
-            <!-- TODO ajouter des alt à toutes les imahes-->
-        </div>
-        <div class="form-right">
-            <form enctype="multipart/form-data">
-                <table>
+
                     <?php include "../PHP/EditCarGet.php";?>
-                </table>
-            </form>
-        </div>
+
     </div>
+
 </main>
 <script src="../JS/navbar.js"></script>
 </body>
 </html>
+
+<!-- TODO ajouter des alt à toutes les imahes-->
