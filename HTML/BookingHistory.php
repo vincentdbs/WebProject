@@ -29,9 +29,9 @@ else if ($_SESSION['user_id'] == 'admin'){
     ?>
 
     <div class="side-bar">
-        <a href="#actual"><img class="icon_profile" src="../Icon/past.png"></a>
-        <a href="#next"><img class="icon_profile" src="../Icon/calendar.png"></a>
-        <a href="#past"><img class="icon_profile" src="../Icon/future.png"></a>
+        <a href="#actual"><img class="icon_profile" src="../Icon/calendar.png"></a>
+        <a href="#next"><img class="icon_profile" src="../Icon/future.png"></a>
+        <a href="#past"><img class="icon_profile" src="../Icon/past.png"></a>
     </div>
 
     <div class="info">
