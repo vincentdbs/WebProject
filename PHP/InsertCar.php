@@ -1,5 +1,12 @@
 <?php
     include "Db_connexion.php";
+    $car_name = $_POST['car_name'];
+
+    $sql = "SELECT car_name FROM car where car_name='" . $car_name . "'";
+    $result_car = mysqli_query($con, $sql);
+    if (mysqli_num_rows($result_car) > 0){
+        die("<script>alert('One car already has this name in the database !'); window.history.go(-1);</script>");
+    }
 
     $target_dir = "../Image/Car/";
     $target_file = $target_dir . basename($_FILES["car_photo"]["name"]);
@@ -23,7 +30,7 @@
         die("<script>window.history.go(-1);</script>");
     }
 
-    $car_name = $_POST['car_name'];
+
     $car_brand = $_POST['car_brand'];
     $car_nb_door = $_POST['car_nb_door'];
     $car_nb_seats= $_POST['car_nb_seat'];
