@@ -20,6 +20,7 @@ $_SESSION['car_id'] = $_GET['car_id'];
     <link rel="stylesheet" href="../CSS/Text.css">
     <link rel="stylesheet" href="../CSS/Button.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="../Icon/car.png">
 </head>
 <body>
 

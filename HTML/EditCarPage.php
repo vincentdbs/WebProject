@@ -19,6 +19,7 @@ else if ($_SESSION['user_id'] == 'user'){
     <link rel="stylesheet" href="../CSS/EditCar.css">
     <link rel="stylesheet" href="../CSS/Text.css">
     <link rel="stylesheet" href="../CSS/Button.css">
+    <link rel="icon" href="../Icon/car.png">
 </head>
 <body>
 <?php

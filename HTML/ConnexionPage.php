@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../CSS/ConnexionPage.css">
     <link rel="stylesheet" href="../CSS/Text.css">
     <link rel="stylesheet" href="../CSS/Button.css">
+    <link rel="icon" href="../Icon/car.png">
 </head>
 <body>
     <?php

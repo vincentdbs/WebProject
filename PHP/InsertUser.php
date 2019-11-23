@@ -26,5 +26,8 @@
     }
 
     mysqli_close($con);
-    header("location: ../HTML/ConnexionPage.php");
+    echo "<script> alert('You are registered !')</script>";
+    die("<script>window.location.href='../HTML/ConnexionPage.php';</script>");
+
+
 ?>
