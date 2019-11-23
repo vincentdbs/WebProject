@@ -41,8 +41,12 @@ main{
 
 @media (min-device-width: 0px) and (max-device-width: 480px) {
 
-    .main-login input{
+    .main-login input[type="text"]{
         background: transparent;
+    }
+
+    .main-login{
+        top: 25%;
     }
 
     .right-half > * , .left-half > *{

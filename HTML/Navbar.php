@@ -1,5 +1,5 @@
 <div class="header">
-    <img src="../Icon/logo_voiture.png" id="logo_car">
+    <img src="../Icon/car.png" id="logo_car">
     <ol class="header_main-menu" id="links">
         <?php
             if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])){
