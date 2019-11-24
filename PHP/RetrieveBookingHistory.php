@@ -9,7 +9,6 @@
             echo "<p>You do not have any actual booking</p>";
         }
         else{
-            echo "<p>Actual</p>";
             displayResult($result);
         }
     }
