@@ -1,5 +1,5 @@
 <?php
-    $server = 'localhost';
+    $server = 'localhost'; //connexion to database
     $phpmyadmin_username = 'root';
     $phpmyadmin_password = '';
     $dbname = 'web_project';

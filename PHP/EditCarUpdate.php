@@ -7,6 +7,8 @@
     $nb_seats = $_POST['car_nb_seats'];
     $price = $_POST['car_price'];
 
+    //update car info
+
     $sql = "UPDATE car SET car_name='" . $name . "', car_brand='" . $brand .
         "', car_nb_doors='" . $nb_doors . "', car_nb_seats='" . $nb_seats .
         "', car_price='" . $price . "' WHERE car_id ='" . $_SESSION['car_id'] . "'";

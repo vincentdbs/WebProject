@@ -1,7 +1,7 @@
 <?php
 
 
-    function retrieveCar(){
+    function retrieveCar(){ //retrieve car depending user filter
         include("Db_connexion.php");
 
         $sql = "SELECT * FROM car";

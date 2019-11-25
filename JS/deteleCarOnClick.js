@@ -1,5 +1,5 @@
 function deleteCar(str){
-    if (confirm("Do you really want to delete this car ?")) {
+    if (confirm("Do you really want to delete this car ?")) { //delete car on click of the bin item
         let xhttp;
         xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {

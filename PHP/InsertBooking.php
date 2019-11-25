@@ -10,6 +10,7 @@
 
     echo "<script>alert($booking_price)</script>";
 
+    //insert booking info
     $sql = "INSERT INTO booking(booking_car_id, booking_user_id, booking_pickup_date, booking_return_date, booking_price)
                 VALUES
                 ('$car_id', '$user_id', '$pickup_date', '$return_date', '$booking_price')";

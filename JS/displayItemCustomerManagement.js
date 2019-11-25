@@ -1,4 +1,4 @@
-function displayDiv(icon) {
+function displayDiv(icon) { //display or hide customer on loan item on click on the arrow
     let parentTr =  icon.parentNode.parentNode;
     let sibling = [];
     while(parentTr.nextSibling.className === "item-tr"){

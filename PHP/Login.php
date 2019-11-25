@@ -5,7 +5,7 @@
     $user_email = mysqli_real_escape_string($con, $_POST['email']);
     $password = mysqli_real_escape_string($con, $_POST['password']);
 
-    $sql = "Select * from user where user_email = '".$user_email."' && user_password = '".md5($password)."'";
+    $sql = "Select * from user where user_email = '".$user_email."' && user_password = '".md5($password)."'"; //check if user credential match the database
 
     $result = mysqli_query($con, $sql);
 

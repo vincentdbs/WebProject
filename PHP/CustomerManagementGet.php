@@ -8,7 +8,7 @@
         die("<p> Sorry, we do not find anything that correspond to your research ! </p>");
     }
 
-    while($rows_user = mysqli_fetch_array($result_user)){
+    while($rows_user = mysqli_fetch_array($result_user)){ //retrieve all users and their booking
         echo '<tr>';
         echo "<td>" . $rows_user['user_id'] . "</td>";
         echo "<td>" . $rows_user['user_first_name'] . "</td>";

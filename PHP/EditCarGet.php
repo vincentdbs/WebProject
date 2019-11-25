@@ -2,7 +2,7 @@
     include "Db_connexion.php";
     $_SESSION['car_id'] = $_GET['car_id'];
 
-    $sql = "SELECT * FROM car WHERE car_id=" . $_SESSION['car_id'];
+    $sql = "SELECT * FROM car WHERE car_id=" . $_SESSION['car_id']; //get car and display
     $result = mysqli_query($con, $sql);
 
     if (mysqli_num_rows($result) <= 0){

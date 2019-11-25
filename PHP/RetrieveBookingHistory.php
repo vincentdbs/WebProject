@@ -3,7 +3,7 @@
         include "Db_connexion.php";
         $today = date("Y-m-d");
 
-        $sql = "SELECT * from booking WHERE booking_user_id= " . $_SESSION['user_id'] . " AND booking_pickup_date < '". $today . "' AND booking_return_date > '" . $today . "'";
+        $sql = "SELECT * from booking WHERE booking_user_id= " . $_SESSION['user_id'] . " AND booking_pickup_date < '". $today . "' AND booking_return_date > '" . $today . "'"; //research actual booking
         $result = mysqli_query($con, $sql);
         if (mysqli_num_rows($result) <= 0){
             echo "<p>You do not have any actual booking</p>";
@@ -17,7 +17,7 @@
         include "Db_connexion.php";
         $today = date("Y-m-d");
 
-        $sql = "SELECT * from booking WHERE booking_user_id= " . $_SESSION['user_id'] . " AND booking_pickup_date < '". $today . "' AND booking_return_date < '" . $today . "'";
+        $sql = "SELECT * from booking WHERE booking_user_id= " . $_SESSION['user_id'] . " AND booking_pickup_date < '". $today . "' AND booking_return_date < '" . $today . "'"; //research previous booking
         $result = mysqli_query($con, $sql);
         if (mysqli_num_rows($result) <= 0){
             echo "<p>You never have booked a car yet.</p>";
@@ -31,7 +31,7 @@
         include "Db_connexion.php";
         $today = date("Y-m-d");
 
-        $sql = "SELECT * from booking WHERE booking_user_id= " . $_SESSION['user_id'] . " AND booking_pickup_date >'". $today . "'";
+        $sql = "SELECT * from booking WHERE booking_user_id= " . $_SESSION['user_id'] . " AND booking_pickup_date >'". $today . "'"; //research next booking
         $result = mysqli_query($con, $sql);
         if (mysqli_num_rows($result) <= 0){
             echo "<p>You do not have any later booking</p>";
@@ -84,7 +84,7 @@
         }
     }
 
-    function displayResultNext($result){
+    function displayResultNext($result){ //with bin item
         while ($rows_booking = mysqli_fetch_array($result)){
             include "Db_connexion.php";
             $sql = "SELECT * FROM car WHERE car_id =" . $rows_booking['booking_car_id'];

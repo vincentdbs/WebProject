@@ -4,7 +4,7 @@ let register = document.getElementById("register");
 let login = document.getElementById("login");
 switchConnexion();
 
-function switchConnexion(){
+function switchConnexion(){ //switch display to connexion and hide register page
     let leftLogin = document.getElementById("left-half-login");
     let rightLogin = document.getElementById("right-half-login");
     register.style.display = "none";
@@ -29,7 +29,7 @@ function switchConnexion(){
     }
 }
 
-function switchRegister() {
+function switchRegister() { //switch display to register and hide connexion page
     let leftRegister = document.getElementById("left-half-register");
     let rightRegister = document.getElementById("right-half-register");
     register.style.display = "block";
@@ -43,7 +43,6 @@ function switchRegister() {
         leftRegister.style.backgroundImage = "none";
         leftRegister.style.backgroundColor = "white";
         leftRegister.style.width = "50%";
-        console.log("register sup 480");
     }
     else{
         rightRegister.style.display = "none";
@@ -51,7 +50,6 @@ function switchRegister() {
         leftRegister.style.width = "100%";
         leftRegister.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(\"../Image/van_face.jpg\")";
         leftRegister.style.backgroundSize = "cover";
-        console.log("register inf 480");
     }
 }
 

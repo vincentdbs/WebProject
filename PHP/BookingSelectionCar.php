@@ -21,7 +21,7 @@
         }
     }
 
-    function getPrice(){
+    function getPrice(){ //total price
         $pickup_date = $_GET['pickup_date'];
         $return_date = $_GET['return_date'];
 
@@ -36,7 +36,7 @@
         return $price;
     }
 
-    function getCarInfo(){
+    function getCarInfo(){ //retrieve car info
         include "Db_connexion.php";
         $info = array();
         $sql = "SELECT * FROM car WHERE car_id='" . $_GET['car_id'] . "'";

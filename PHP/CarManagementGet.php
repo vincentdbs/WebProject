@@ -1,13 +1,13 @@
 <?php
     include("Db_connexion.php");
 
-    $sql = "SELECT * FROM car ORDER BY car_name";
+    $sql = "SELECT * FROM car ORDER BY car_name"; //get car order alphabatically by name
     $result = mysqli_query($con, $sql);
     if (mysqli_num_rows($result) <= 0){
         die("<p> Sorry, we do not find anything that correspond to your research ! </p>");
     }
 
-    while($rows = mysqli_fetch_array($result)){
+    while($rows = mysqli_fetch_array($result)){ //display result in table
         echo "<div class=\"card-column\">";
         echo "<div class=\"card-content\">";
         echo "<div class=\"content\">";

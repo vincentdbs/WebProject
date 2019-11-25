@@ -7,6 +7,7 @@
     $first_name = $_POST['firstName'];
     $email = $_POST['email'];
 
+    //update personnal info
 
     $sql = "UPDATE user SET " .
         "user_first_name = '$first_name', ".

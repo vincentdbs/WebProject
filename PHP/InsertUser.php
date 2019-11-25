@@ -8,7 +8,7 @@
 
     $sql = "SELECT * FROM user";
     $result = mysqli_query($con, $sql);
-    if (mysqli_num_rows($result) > 0){
+    if (mysqli_num_rows($result) > 0){ // check if email address already taken
         while ($rows = mysqli_fetch_array($result)){
             if ($rows['user_email'] == $email){
                 echo "<script> alert('This email is already taken !')</script>";
@@ -16,6 +16,7 @@
             }
         }
     }
+    //insert user info into database
 
     $sql = "INSERT INTO user(user_first_name, user_last_name, user_email, user_password, user_role)
             VALUES

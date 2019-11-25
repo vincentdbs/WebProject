@@ -1,4 +1,4 @@
-window.addEventListener("resize", displayNavbar);
+window.addEventListener("resize", displayNavbar); //display navabar
 var navbar = document.getElementById("links");
 function displayMenu() {
 
