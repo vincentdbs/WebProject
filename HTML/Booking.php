@@ -42,12 +42,12 @@
                     </div>
                     <div>
                         <label>Pickup date:</label>
-                        <input type="date" name="pickup_date" id="booking_pickup_date">
+                        <input type="date" name="pickup_date" min="<?php echo date("Y-m-d"); ?>" id="booking_pickup_date">
 
                     </div>
                     <div>
                         <label>Return date:</label>
-                        <input type="date" name="return_date" id="booking_return_date">
+                        <input type="date" name="return_date" min="<?php echo date("Y-m-d"); ?>" id="booking_return_date">
                     </div>
                     <div>
                         <a id="button_booking" onclick="urlConstruct()">Search</a>
