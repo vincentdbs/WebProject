@@ -40,7 +40,7 @@
 
         echo "<div class=\"car-container\">";
         while($rows = mysqli_fetch_array($result)){
-            if(isCarAvaible($rows['car_id'], $rows['car_stocks'])){
+            if(isCarAvaible($rows['car_id'], $rows['car_stocks'])){ // check if the car is available
                 echo "<div class=\"card-column\">";
                 echo "<div class=\"card-content\">";
                 echo "<div class=\"content\">";

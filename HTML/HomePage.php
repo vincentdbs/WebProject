@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,36 +17,36 @@
 
 </head>
 <body>
-    <?php
-        include "Navbar.php";
-    ?>
+<?php
+include "Navbar.php";
+?>
 
-    <main>
-        <div class="main-hero-image image1">
-            <div class="main-hero-text">
-                <h1>Car rental</h1>
-                <p>You need a car for a quick travel with your family, go shopping or just visit the city.<br>
-                    Select one from a huge collection of amazing cars.</p>
-                <button class="main-button-rent button-more" onclick="location.href = 'SelectionCar.php';">Find out more</button>
-            </div>
+<main>
+    <div class="main-hero-image image1">
+        <div class="main-hero-text">
+            <h1>Car rental</h1>
+            <p>You need a car for a quick travel with your family, go shopping or just visit the city.<br>
+                Select one from a huge collection of amazing cars.</p>
+            <button class="main-button-rent button-more" onclick="location.href = 'SelectionCar.php';">Find out more</button>
         </div>
-        <div class="main-hero-image image2">
-            <div class="main-hero-text">
-                <h1>Special Event</h1>
-                <p>You want to show off in front of your friends with a powerful sport car. We have what you need.<br>
-                    You can also choose a classic car, limousine or wedding car because everyday is a special day.</p>
-                <button class="main-button-rent button-more" onclick="location.href = 'SelectionCar.php';">Find out more</button>
-            </div>
+    </div>
+    <div class="main-hero-image image2">
+        <div class="main-hero-text">
+            <h1>Special Event</h1>
+            <p>You want to show off in front of your friends with a powerful sport car. We have what you need.<br>
+                You can also choose a classic car, limousine or wedding car because everyday is a special day.</p>
+            <button class="main-button-rent button-more" onclick="location.href = 'SelectionCar.php';">Find out more</button>
         </div>
-        <div class="main-hero-image image3">
-            <div class="main-hero-text">
-                <h1>Truck</h1>
-                <p>Your kid has just moved in and you car can't take the couch in the car boot. <br>
+    </div>
+    <div class="main-hero-image image3">
+        <div class="main-hero-text">
+            <h1>Truck</h1>
+            <p>Your kid has just moved in and you car can't take the couch in the car boot. <br>
                 Don't worry ! We have a lot of trucks from several size for all different occasions.</p>
-                <button class="main-button-rent button-more" onclick="location.href = 'SelectionCar.php';">Find out more</button>
-            </div>
+            <button class="main-button-rent button-more" onclick="location.href = 'SelectionCar.php';">Find out more</button>
         </div>
-    </main>
-    <script src="../JS/navbar.js"></script>
+    </div>
+</main>
+<script src="../JS/navbar.js"></script>
 </body>
 </html>
