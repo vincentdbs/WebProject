@@ -46,13 +46,13 @@
                     <div class="main-login">
                         <h1>Welcome !</h1>
                         <label>First name</label>
-                        <input type="text" class="input-login" name="firstName">
+                        <input type="text" class="input-login" name="firstName" required>
                         <label>Last name</label>
-                        <input type="text" class="input-login" name="lastName">
+                        <input type="text" class="input-login" name="lastName" required>
                         <label>Email</label>
-                        <input type="text" class="input-login" name="email">
+                        <input type="email" class="input-login" name="email" required>
                         <label>Password</label>
-                        <input type="password" class="input-login" name="password">
+                        <input type="password" class="input-login" name="password" required>
                         <input type="submit" value="Register" class="button-login">
                         <a class="link-login" onclick="switchConnexion()">or login</a>
                     </div>
