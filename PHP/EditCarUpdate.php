@@ -16,8 +16,7 @@
     mysqli_query($con, $sql);
     if(mysqli_affected_rows($con)<=0)
     {
-        echo "<script>alert('Cannot update data!');";
-        die ("window.location.href='../HTML/EditCarPage.php?car_id='" . $_SERVER['REQUEST_URI'] . ";</script>");
+        die ("<script>alert('Cannot update data!'); window.location.href='../HTML/EditCarPage.php?car_id='" . $_SERVER['REQUEST_URI'] . ";</script>");
     }else{
         unset($_SESSION['car_id']);
         echo "<script>alert('Data updated!);</script>";
