@@ -26,12 +26,13 @@
 
             if(mysqli_affected_rows($con)<=0)
             {
-                echo "<script>alert('Cannot update data!');";
-                die ("window.location.href='../HTML/MyProfile.php';</script>");
+                die ("<script>alert('Cannot update data!');window.location.href='../HTML/MyProfile.php';</script>");
             }else{
-                echo "<script>alert('Data updated!1' .  $first_name );</script>";
-                echo "<script>window.location.href='../HTML/MyProfile.php';</script>";
+                die("<script>alert('Data updated!'); window.location.href='../HTML/MyProfile.php';</script>");
             }
+        }
+        else{
+            die ("<script>alert('Confirm password has to be the same as new'); window.location.href='../HTML/MyProfile.php';</script>");
         }
     }
     else{
